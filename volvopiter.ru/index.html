@@ -1,73 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=!, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=!, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container-fluid">
-            <div class="header_top">
-                <div class="row">
-                    <div class="col-lg-1">
-                        <a href="/">
-                            <img src="./assets/img/logo.png" alt="volvo">
-                        </a>
-
-                    </div>
-                </div>
-
+      <div class="container-fluid">
+        <div class="header_top pt-2 pb-2">
+          <div class="row align-items-center">
+            <div class="col-lg-1 col-3">
+              <a href="/">
+                <img src="./assets/img/logo.png" alt="volvo" />
+              </a>
             </div>
-            <div class="header_bottom">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                            <a class="navbar-brand" href="#">Navbar</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						  </button>
-                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Pricing</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								  Dropdown link
-								</a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </nav>
-                    </div>
-                </div>
-
+            <div class="col-lg-2 d-none d-md-block">
+              <p class="mb-0 bold">
+                Специализированный<br />
+                сервис Вольво в<br />
+                Санкт-Петербурге
+              </p>
             </div>
+            <div class="col d-none d-lg-block">
+              <div class="row justify-content-between">
+                <div class="col d-none d-xxl-block">
+                  <div class="header_top-center-item d-flex align-items-center">
+                    <div
+                      class="item_img-wrapper d-flex justify-content-center align-items-center me-2"
+                    >
+                      <img
+                        src="./assets/img/camera.png "
+                        width="25 "
+                        alt="camera "
+                      />
+                    </div>
+                    <p class="text-small mb-0">
+                      Видео отчет отправляем <br />
+                      в WhatsApp
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="header_top-center-item d-flex align-items-center">
+                    <div
+                      class="item_img-wrapper d-flex justify-content-center align-items-center me-2"
+                    >
+                      <img
+                        src="./assets/img/truck.png "
+                        width="24 "
+                        alt="camera "
+                      />
+                    </div>
+                    <p class="text-small mb-0">Нужен эвакуатор?</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="header_top-center-item d-flex align-items-center">
+                    <div
+                      class="item_img-wrapper d-flex justify-content-center align-items-center me-2"
+                    >
+                      <img
+                        src="./assets/img/location.png "
+                        width="19 "
+                        alt="camera "
+                      />
+                    </div>
+                    <p class="text-small mb-0">
+                      Удобное месторасположение<br />
+                      <a href="# " class="color-red underline"
+                        >Смотреть на карте</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="header_top-center-item d-flex align-items-center">
+                    <p class="text-small mb-0 me-3">
+                      <a href=" ">
+                        <span class="nowrap">Задайте Ваш вопрос </span> <br />
+                        <span
+                          style="font-size: 36px; color: green; line-height: 0"
+                          >.</span
+                        >
+                        ONLINE
+                      </a>
+                    </p>
+                    <img
+                      src="./assets/img/whatsapp.png "
+                      alt="whatsapp "
+                      width="41 "
+                      height="41 "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-2 col-lg-3 d-flex align-items-center col-8">
+              <img
+                src="./assets/img/managerelipse.png "
+                alt="manager "
+                width="80 "
+                class="d-none d-lg-block"
+              />
+              <div class="text-wrapper ms-1">
+                <p class="h3 bold mb-0"><a href="# ">8 (495) 545-55-55</a></p>
+                <p class="text-small mb-0">Перезвоним за 30 секунд</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="header_bottom">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav justify-content-between d-flex">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="# "
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="# ">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="# ">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="# ">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="# ">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="# ">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown link
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <h1 class="pmsb">asdasdasd</h1>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
 
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js "
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin=" anonymous "
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM "
+      crossorigin="anonymous "
+    ></script>
+  </body>
 </html>
