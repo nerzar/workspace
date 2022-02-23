@@ -349,3 +349,49 @@ header .color-red:hover {
   height: 19px;
   pointer-events: none;
 }
+
+/* stocks */
+.stocks_undertitle {
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid #eaecf9;
+  border-radius: 20px;
+  display: inline;
+}
+.stocks_item {
+  padding: 30px 29px;
+  border-radius: 20px;
+  height: 248px;
+  border: 1px solid #eaecf9;
+  background: linear-gradient(
+      90deg,
+      rgba(248, 249, 253, 1) 0%,
+      rgba(248, 249, 253, 1) 50%,
+      rgba(248, 249, 253, 0.5) 64%,
+      rgba(248, 249, 253, 0) 100%
+    ),
+    url(../img/stock1.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.stocks_item-2 {
+  background: linear-gradient(
+      90deg,
+      rgba(248, 249, 253, 1) 0%,
+      rgba(248, 249, 253, 1) 50%,
+      rgba(248, 249, 253, 0.5) 64%,
+      rgba(248, 249, 253, 0) 100%
+    ),
+    url(../img/stock2.jpg) no-repeat;
+}
+.stocks_item-3 {
+  background: linear-gradient(
+      90deg,
+      rgba(248, 249, 253, 1) 0%,
+      rgba(248, 249, 253, 1) 50%,
+      rgba(248, 249, 253, 0.5) 64%,
+      rgba(248, 249, 253, 0) 100%
+    ),
+    url(../img/stock3.jpg) no-repeat;
+}
