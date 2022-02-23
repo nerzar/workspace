@@ -108,6 +108,52 @@ img {
 .uppercase {
   text-transform: uppercase;
 }
+.button_h-60 {
+  height: 60px;
+}
+.button_volvo {
+  width: 100%;
+  box-shadow: 1px 3px 5px 0 #131111d2;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f25352),
+    color-stop(1%, #f25352),
+    color-stop(50%, #e02a28),
+    color-stop(85%, #b92526d1)
+  );
+  background: linear-gradient(
+    to bottom,
+    #f25352,
+    #f25352 1%,
+    #e02a28 50%,
+    #b92526d1 85%
+  );
+  border: none;
+  font-family: proximanova;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  line-height: 2;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  text-shadow: 2px 2px 3px #0000009c;
+}
+.button_volvo-green {
+  background: linear-gradient(
+    to bottom,
+    #8ad57f,
+    #82d269 25%,
+    #7dca65 50%,
+    #6eb45b 100%
+  );
+}
 /* header */
 
 .item_img-wrapper {
@@ -142,7 +188,6 @@ header .color-red:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  height: 600px;
 }
 .intro .intro_content {
   background: rgb(248, 249, 253);
@@ -150,15 +195,27 @@ header .color-red:hover {
     90deg,
     rgba(248, 249, 253, 1) 0%,
     rgba(248, 249, 253, 1) 50%,
-    rgba(248, 249, 253, 0.5) 64%,
-    rgba(248, 249, 253, 0.1) 100%
+    rgba(248, 249, 253, 0) 64%,
+    rgba(248, 249, 253, 0) 100%
   );
   border: 2px solid #eaecf9;
   border-right: none;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  padding: 70px;
-  height: 600px;
+  padding: 50px 70px;
+  height: 100%;
+}
+@media screen and (max-width: 900px) {
+  .intro .intro_content {
+    background: rgb(248, 249, 253);
+    background: linear-gradient(
+      90deg,
+      rgba(248, 249, 253, 0.9) 0%,
+      rgba(248, 249, 253, 0.7) 51%,
+      rgba(248, 249, 253, 0.5) 64%,
+      rgba(248, 249, 253, 0.5) 100%
+    );
+  }
 }
 .line {
   width: 1px;
@@ -180,4 +237,115 @@ header .color-red:hover {
   margin: 0;
   height: 600px;
   padding: 20px 0;
+}
+.intro_content .button_volvo {
+  max-width: 300px;
+}
+.button_with-book {
+  position: relative;
+  padding-left: 60px;
+}
+.button_with-book:before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  left: -66px;
+  top: -35px;
+  background-image: url(../img/MAGAZINE.png);
+  width: 140px;
+  height: 135px;
+  pointer-events: none;
+}
+.intro_contact-block {
+  width: 74%;
+  background-color: #ffffffba;
+  background-image: url(../img/introarrow.png);
+  background-position: top 115px right 35px;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 1px 1px 15px 0 #767474;
+  box-shadow: 1px 1px 15px 0 #767474;
+  border-radius: 20px;
+  padding: 25px 20px;
+  padding-left: 25%;
+  position: relative;
+}
+
+.intro_contact-block:before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  left: -80px;
+  top: 60px;
+  background-image: url(../img/bigphone.png);
+  width: 210px;
+  height: 390px;
+  pointer-events: none;
+}
+@media screen and (min-width: 992px) {
+  .intro_contact-block {
+    width: 85%;
+  }
+  .intro_contact-block:before {
+    left: -100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .intro_contact-block {
+    width: 74%;
+  }
+  .intro_contact-block:before {
+    left: -80px;
+  }
+}
+.intro_contact-block .button_volvo span:before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  left: -30px;
+  top: 2.5px;
+  background-image: url(../img/whatsappwhite.png);
+  width: 17px;
+  height: 17px;
+  pointer-events: none;
+}
+.intro_contact-block .telegram {
+  position: relative;
+}
+.intro_contact-block .telegram:before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  left: -10px;
+  top: 2.5px;
+  background-image: url(../img/telegram.png);
+  width: 35px;
+  height: 35px;
+  pointer-events: none;
+}
+.intro_contact-block .telegram span {
+  position: relative;
+}
+.intro_contact-block .telegram span:before {
+  background-color: #039be5;
+  content: "";
+  position: absolute;
+  left: 1px;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  pointer-events: none;
+}
+.intro_contact-block .phone {
+  position: relative;
+}
+.intro_contact-block .phone:before {
+  content: "";
+  position: absolute;
+
+  left: 0px;
+  top: 2.5px;
+  background-image: url(../img/call.png);
+  width: 20px;
+  height: 19px;
+  pointer-events: none;
 }
