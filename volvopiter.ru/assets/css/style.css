@@ -42,7 +42,7 @@ body {
 }
 
 .ligthen-color {
-  color: #2b2e45d1;
+  color: #303551b2;
 }
 
 .color-red {
@@ -148,10 +148,10 @@ img {
 .button_volvo-green {
   background: linear-gradient(
     to bottom,
-    #8ad57f,
-    #82d269 25%,
+    #7ad06d 1%,
     #7dca65 50%,
-    #6eb45b 100%
+    #5eb052 90%,
+    #446e38 98%
   );
 }
 /* header */
@@ -194,8 +194,8 @@ header .color-red:hover {
   background: linear-gradient(
     90deg,
     rgba(248, 249, 253, 1) 0%,
-    rgba(248, 249, 253, 1) 50%,
-    rgba(248, 249, 253, 0) 64%,
+    rgba(248, 249, 253, 1) 55%,
+    rgba(248, 249, 253, 0) 70%,
     rgba(248, 249, 253, 0) 100%
   );
   border: 2px solid #eaecf9;
@@ -366,32 +366,125 @@ header .color-red:hover {
   background: linear-gradient(
       90deg,
       rgba(248, 249, 253, 1) 0%,
-      rgba(248, 249, 253, 1) 50%,
+      rgba(248, 249, 253, 1) 45%,
+      rgba(248, 249, 253, 0.8) 55%,
       rgba(248, 249, 253, 0.5) 64%,
       rgba(248, 249, 253, 0) 100%
     ),
     url(../img/stock1.jpg) no-repeat;
   background-repeat: no-repeat;
-  background-size: contain;
+
   background-position: right;
 }
 .stocks_item-2 {
   background: linear-gradient(
       90deg,
       rgba(248, 249, 253, 1) 0%,
-      rgba(248, 249, 253, 1) 50%,
+      rgba(248, 249, 253, 1) 45%,
+      rgba(248, 249, 253, 0.8) 55%,
       rgba(248, 249, 253, 0.5) 64%,
       rgba(248, 249, 253, 0) 100%
     ),
     url(../img/stock2.jpg) no-repeat;
+  background-position: right;
 }
 .stocks_item-3 {
   background: linear-gradient(
       90deg,
       rgba(248, 249, 253, 1) 0%,
-      rgba(248, 249, 253, 1) 50%,
+      rgba(248, 249, 253, 1) 45%,
+      rgba(248, 249, 253, 0.8) 55%,
       rgba(248, 249, 253, 0.5) 64%,
       rgba(248, 249, 253, 0) 100%
     ),
     url(../img/stock3.jpg) no-repeat;
+  background-position: right;
+}
+.stocks_undertitle {
+  white-space: nowrap;
+}
+/* quiz */
+.quiz_step-number {
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  line-height: 45px;
+  border: 1px solid #e7e9f8;
+}
+.quiz_step .line {
+  /* width: 176px;*/
+  width: 10vw;
+  height: 2px;
+  background: #ced3f1;
+  position: relative;
+}
+.quiz_step .line:before {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  content: "";
+  background-color: #ced3f1;
+  border-radius: 50%;
+  left: calc(50% - 5px);
+  bottom: calc(50% - 5px);
+  z-index: 2;
+}
+.quiz_dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ced3f1;
+  border-radius: 50%;
+}
+.active.quiz_step .line:before,
+.active.quiz_step .line {
+  background: #ec1114;
+}
+.active .quiz_step-number {
+  background-color: #ec1114;
+  color: white;
+  border: 1px solid #ec1114;
+}
+.quiz_arrows svg {
+  height: 20px;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+.quiz_arrow {
+  cursor: pointer;
+}
+.disabled {
+  pointer-events: none;
+}
+.quiz_arrow:hover svg {
+  opacity: 0.6;
+}
+.quiz_content {
+  background-color: #f8f9fd;
+  border: 1px solid #eaecf9;
+  padding: 15px;
+
+  padding: 40px 60px;
+}
+.quiz_content-next svg {
+  height: 20px;
+  fill: #fff;
+}
+.quiz_content-next .quiz_arrow {
+  width: 48px;
+  height: 48px;
+  background-color: #ec1114;
+  border-radius: 50%;
+}
+.quiz_content-next {
+  cursor: pointer;
+}
+.quiz_content-next:hover svg {
+  opacity: 1;
+}
+.preform-text {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: tb-rl;
 }
