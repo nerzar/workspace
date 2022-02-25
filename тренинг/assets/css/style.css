@@ -121,6 +121,7 @@ header {
 }
 .about {
   overflow: hidden;
+  background-color: #ffebcb;
 }
 .step-3:before {
   content: "";
@@ -128,7 +129,34 @@ header {
   height: 460px;
   background: url(../img/pngegg3.png) no-repeat top left;
   top: -425px;
-  left: -292px;
+  left: -300px;
   width: 763px;
   background-size: cover;
+}
+/* fotoline */
+.fotoline {
+  background: url(../img/roapbgpng.png);
+  background-size: cover;
+  background-position: bottom center;
+  padding: 0;
+}
+.fotoline img {
+  max-width: 354px;
+  margin-top: 60px;
+  margin-bottom: -160px;
+  /* margin-left: -17px; */
+  height: auto;
+}
+.fotoline img:first-child {
+  margin-left: -85px;
+  width: 334px;
+  height: 285px;
+}
+.fotoline img:nth-child(2) {
+  margin-left: -28px;
+  width: 310px;
+  width: 350.76px;
+  height: 277.7px;
+  /* margin-bottom: -141px; */
+  margin-top: 68px;
 }
