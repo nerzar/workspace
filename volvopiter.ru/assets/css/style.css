@@ -89,7 +89,9 @@ a:hover {
 .h3 {
   font-size: 1.5rem;
 }
-
+.h4 {
+  font-size: 1.25rem;
+}
 img {
   max-width: 100%;
 }
@@ -663,4 +665,28 @@ header .color-red:hover {
 }
 .note {
   margin-top: -30px;
+}
+.quiz_aside {
+  background-color: #f8f9fd;
+  border: 1px solid #eaecf9;
+  border-radius: 25px;
+  padding: 28px;
+}
+.quiz_aside-col {
+  margin-top: 60px;
+}
+.master {
+  margin-top: -100px;
+}
+.master_name {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.quiz_aside {
+  background-image: url(../img/gifts.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  background-position: bottom -60px center;
 }
