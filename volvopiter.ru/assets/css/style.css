@@ -293,7 +293,7 @@ header .color-red:hover {
 }
 @media screen and (min-width: 1400px) {
   .intro_contact-block {
-    width: 75%;
+    width: 76%;
   }
   .intro_contact-block:before {
     left: -90px;
@@ -689,4 +689,24 @@ header .color-red:hover {
   background-repeat: no-repeat;
   padding-bottom: 100px;
   background-position: bottom -60px center;
+}
+
+/* choose us */
+.chose_us {
+  background: url(../img/chosebg.png) no-repeat right;
+  background-size: cover;
+  border-top: 1px solid #eaecf9;
+  border-bottom: 1px solid #eaecf9;
+}
+.chose_us .stocks_item {
+  background: url(../img/7669.png) no-repeat;
+}
+.chose_us .row {
+  margin-bottom: -30px;
+}
+.scroller_item {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 15px #76747454;
+  border-radius: 15px;
 }
