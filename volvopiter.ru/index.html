@@ -193,7 +193,7 @@
         </div>
       </div>
     </header>
-    <section class="intro mt-4 mb-4 d-none">
+    <section class="intro mt-4 mb-4">
       <div class="container-fluid">
         <div class="row">
           <div
@@ -285,13 +285,13 @@
                           >в WhatsApp</span
                         >
                       </button>
-                      <a href="#" class="telegram pmsb ps-5 d-block ms-3 mb-2"
+                      <a href="#" class="telegram pmsb ps-5 d-block ms-2 mb-2"
                         >Узнать стоимоcть<br />
                         <span>Telegram</span></a
                       >
-                      <p class="text-small ps-5 d-block ms-3 mb-3">или</p>
+                      <p class="text-small ps-5 d-block ms-2 mb-3">или</p>
                       <a
-                        class="phone pmsb text-big ps-5 d-block ms-3 mb-4"
+                        class="phone pmsb text-big ps-5 d-block ms-2 mb-4"
                         href="#"
                         >8 (495) 545-55-55</a
                       >
@@ -515,7 +515,7 @@
                   <p class="text-big uppercase pmsb mt-3">s30</p>
                 </div>
               </div>
-              <div class="row quiz-slide quiz-slide-2 active">
+              <div class="row quiz-slide quiz-slide-2">
                 <div class="quiz-service_item-wrapper col-lg-3 mb-4">
                   <div class="quiz-service_item">
                     <label class="d-block text-center active">
@@ -741,37 +741,111 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col">
-                  <div
-                    class="quiz_next d-flex ms-auto quiz_content-next align-items-center justify-content-end"
-                  >
-                    <p class="text-big uppercase me-3 mb-0">Дальше</p>
-                    <div
-                      class="quiz_arrow d-flex justify-content-center align-items-center"
-                    >
-                      <!--?xml version="1.0" encoding="UTF-8" standalone="yes"?--><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 22 22"
-                      >
-                        <defs>
-                          <clipPath>
-                            <path fill="#fff" d="m-7 1024.36h34v34h-34z"></path>
-                          </clipPath>
-                          <clipPath>
-                            <path fill="#fff" d="m-6 1028.36h32v32h-32z"></path>
-                          </clipPath>
-                        </defs>
-                        <path
-                          d="m345.44 248.29l-194.29 194.28c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744l171.91-171.91-171.91-171.9c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.29 194.28c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373"
-                          transform="matrix(.03541-.00013.00013.03541 2.98 3.02)"
-                          fill="#fff"
-                        ></path>
-                      </svg>
+              <div class="row quiz-slide quiz-slide-3 pt-3 active">
+                <div class="col-lg-3 mt-5">
+                  <img src="./assets/img/bigphone.png" alt="" />
+                </div>
+                <div class="col-lg-6">
+                  <div class="quiz_form">
+                    <div class="row">
+                      <div class="col-12">
+                        <h3 class="h3 text-center mb-4 pmbold">Цена ремонта</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <select name="model" class="quiz_select">
+                          <option data-id="160" value="BMW 1">BMW 1</option>
+                          <option data-id="161" value="BMW 2">BMW 2</option>
+                          <option data-id="162" value="BMW 3">BMW 3</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <select name="model" class="quiz_select">
+                          <option data-id="160" value="BMW 1">BMW 1</option>
+                          <option data-id="161" value="BMW 2">BMW 2</option>
+                          <option data-id="162" value="BMW 3">BMW 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 text-center mt-4 mb-4">
+                        <p class="text-big uppercase pmsb mb-0">
+                          Куда прислать прайс
+                        </p>
+                      </div>
+                    </div>
+                    <div class="af_radio_row row mb-4">
+                      <label class="f_viber col-4">
+                        <input
+                          type="radio"
+                          name="callback"
+                          value="viber"
+                          id="f_viber"
+                          checked=""
+                        />
+                        <span class="text-start">Viber</span>
+                      </label>
+                      <label class="f_whatsapp col-4">
+                        <input
+                          type="radio"
+                          name="callback"
+                          value="whatsapp"
+                          id="f_whatsapp"
+                        />
+                        <span class="text-start"> WhatsApp</span>
+                      </label>
+
+                      <label class="f_sms col-4">
+                        <input
+                          type="radio"
+                          name="callback"
+                          value="sms"
+                          id="f_sms"
+                        />
+                        <span class="text-start"> SMS</span>
+                      </label>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 text-center">
+                        <p class="color-lighten mb-0 mt-2">
+                          Укажите ваш телефон
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          type="tel"
+                          name="phone"
+                          required=""
+                          placeholder="+7 (___)-___-__-__"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8 offset-1">
+                        <button
+                          class="button_volvo button_h-60 mt-5 button_with-book ms-md-5"
+                        >
+                          скачать прайс
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="col-lg-3 text-center">
+                  <img src="./assets/img/note.png" alt="" class="note" />
+                  <p class="text-big mt-4">
+                    Александр менеджер<br />
+                    студии Автоцентра ПИК готов ответить на лю
+                  </p>
+                  <hr / style="color:#ced3f1;" class="">
+                  <a
+                    class="phone pmsb text-big ps-5 d-inline mb-4 me-2"
+                    href="#"
+                    >8 (495) 545-55-55</a
+                  >
+                </div>
               </div>
+
+              <div class="row"></div>
             </div>
           </div>
         </div>
