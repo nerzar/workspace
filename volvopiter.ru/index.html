@@ -12,6 +12,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/jquery.mCustomScrollbar.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
 
@@ -865,7 +870,7 @@
     <section class="chose_us mt-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-4 offset-lg-1">
+          <div class="col-lg-4 offset-xl-1 order-1">
             <h2 class="h2 pmbold mt-5">Почему нас выбирают</h2>
             <p class="h3 ligthen-color mb-4">И нам доверяют владельцы Volvo</p>
             <p class="text-big mb-5">
@@ -878,11 +883,17 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-2 chose_us-centercol">
-            <img src="./assets/img/handphone.png" alt="whatsapp" class="mt-5" />
+          <div
+            class="col-lg-3 col-xl-2 mt-lg-5 mt-xxl-0 chose_us-centercol order-3 order-lg-2"
+          >
+            <img
+              src="./assets/img/handphone.png"
+              alt="whatsapp"
+              class="mt-5 d-none d-lg-inline"
+            />
             <button
               style="line-height: 1.3"
-              class="button_volvo button_h-60 button_volvo-green"
+              class="button_volvo button_h-60 button_volvo-green mb-4 mb-md-0"
             >
               узнать стоимость<br /><span
                 style="text-transform: none; position: relative"
@@ -890,21 +901,60 @@
               >
             </button>
           </div>
-          <div class="col-lg-4 text-center">
+          <div
+            class="col-lg-5 text-center pb-4 scroller_col order-lg-3 order-2"
+          >
             <h3 class="h3 pmsb mt-5 mb-4">
               Все работы выполняются после<br />
               согласования с Вами
             </h3>
-            <p class="h4 color-lighten mb-3">
+            <p class="h4 color-lighten mb-3 pe-lg-5 ps-lg-5 ps-xxl-0 pe-xxl-0">
               Вы контролируете все этапы ремонта Вашего авто
             </p>
-            <div class="scroller pt-3">
-              <div class="scroller_item d-flex">
+            <div class="scroller pb-4 pt-3 mCustomScrollBox">
+              <div class="scroller_item d-flex mb-4 align-items-center">
                 <img src="./assets/img/pyb.png" alt="" class="me-4" />
                 <div class="text-wrapper text-start">
                   <p class="text-big mb-1 mt-2 pmsb">Цена без накруток</p>
                   <span class="color-lighten"
                     >Сумма названная вам по телефону остается неизменной</span
+                  >
+                </div>
+              </div>
+              <div class="scroller_item d-flex mb-4 align-items-center">
+                <img
+                  src="./assets/img/object2.png"
+                  alt=""
+                  class="me-4"
+                  height="84"
+                  width="84"
+                />
+                <div class="text-wrapper text-start">
+                  <p class="text-big mb-1 mt-2 pmsb">
+                    Правильный подбор деталей
+                  </p>
+                  <span class="color-lighten"
+                    >Мы самостоятельно подбирем и доставим нужные запчасти с
+                    гарантией в подходящем для вас ценовом сегоменте</span
+                  >
+                </div>
+              </div>
+              <div class="scroller_item d-flex mb-4 align-items-center">
+                <img src="./assets/img/object.png" alt="" class="me-4" />
+                <div class="text-wrapper text-start">
+                  <p class="text-big mb-1 mt-2 pmsb">Согласование работ</p>
+                  <span class="color-lighten"
+                    >Все работы проводятся только после согласования с
+                    вами</span
+                  >
+                </div>
+              </div>
+              <div class="scroller_item d-flex mb-4 align-items-center">
+                <img src="./assets/img/s1200.png" alt="" class="me-4" />
+                <div class="text-wrapper text-start">
+                  <p class="text-big mb-1 mt-2 pmsb">Гарантия</p>
+                  <span class="color-lighten"
+                    >На все проводимые работы мы даем гарантию</span
                   >
                 </div>
               </div>
@@ -918,10 +968,22 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin=" anonymous "
     ></script>
+    <script src="./assets/js/jquery.mcustomscrollbar.concat.min.js "></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js "
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM "
       crossorigin="anonymous "
     ></script>
+
+    <script>
+      (function ($) {
+        $(window).on("load", function () {
+          $(".mCustomScrollBox").mCustomScrollbar({
+            axis: "y",
+            theme: "dark",
+          });
+        });
+      })(jQuery);
+    </script>
   </body>
 </html>

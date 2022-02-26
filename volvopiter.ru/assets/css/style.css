@@ -700,6 +700,7 @@ header .color-red:hover {
 }
 .chose_us .stocks_item {
   background: url(../img/7669.png) no-repeat;
+  background-size: cover;
 }
 .chose_us .row {
   margin-bottom: -30px;
@@ -709,4 +710,61 @@ header .color-red:hover {
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 15px #76747454;
   border-radius: 15px;
+}
+
+.mCustomScrollBox {
+  height: 340px;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #e21113;
+}
+.scroller_col {
+  position: relative;
+}
+.scroller_col:before {
+  content: "ЛИСТАЙТЕ ВНИЗ";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: tb-rl;
+  width: 18px;
+  height: 150px;
+  position: absolute;
+  right: 16px;
+  top: 30px;
+  z-index: 2;
+}
+
+.mCSB_draggerContainer:after {
+  width: 22px;
+  height: 32px;
+  position: absolute;
+  content: "";
+  background: url(../img/mouse.png);
+
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+#mCSB_1_scrollbar_vertical {
+  padding-bottom: 60px;
+}
+.mCSB_container {
+  padding: 0 15px;
+  padding-top: 15px;
+}
+.mCSB_draggerContainer {
+  padding-bottom: 50px;
+}
+.mCSB_dragger {
+  right: 3px;
+}
+.mCSB_draggerRail {
+  display: none;
+}
+@media (max-width: 430px) {
+  .scroller_col:before {
+    display: none;
+  }
 }
