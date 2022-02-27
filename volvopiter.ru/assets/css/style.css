@@ -156,6 +156,7 @@ img {
     #446e38 98%
   );
 }
+
 /* header */
 
 .item_img-wrapper {
@@ -763,8 +764,39 @@ header .color-red:hover {
 .mCSB_draggerRail {
   display: none;
 }
-@media (max-width: 430px) {
+@media (max-width: 769px) {
+  html {
+    font-size: 14px;
+  }
+  .intro .intro_content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
   .scroller_col:before {
+    display: none;
+  }
+  .intro {
+    background: linear-gradient(
+        180deg,
+        rgba(248, 249, 253, 1) 0%,
+        rgba(248, 249, 253, 0.9) 55%,
+        rgba(248, 249, 253, 0.7) 70%,
+        rgba(248, 249, 253, 0) 100%
+      ),
+      url(../img/mobbg.jpg) no-repeat bottom;
+  }
+  .intro .intro_content {
+    background: none;
+    border: none;
+  }
+  .button_volvo {
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .mphone {
     display: none;
   }
 }

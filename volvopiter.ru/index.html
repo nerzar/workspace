@@ -30,14 +30,14 @@
                 <img src="./assets/img/logo.png" alt="volvo" />
               </a>
             </div>
-            <div class="col-lg-2 d-none d-md-block col-md-3">
+            <div class="col-lg-2 col-6 col-md-3">
               <p class="mb-0 bold">
                 Специализированный<br />
                 сервис Вольво в<br />
                 Санкт-Петербурге
               </p>
             </div>
-            <div class="col-md-3 col-lg-5 col-xl-6 col-xxl-7 d-none d-md-block">
+            <div class="col-md-3 col col-lg-5 col-xl-6 col-xxl-7 d-md-block">
               <div class="row justify-content-between">
                 <div class="col d-none d-xxl-block">
                   <div class="header_top-center-item d-flex align-items-center">
@@ -70,7 +70,7 @@
                     <p class="text-small mb-0">Нужен эвакуатор?</p>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-none d-md-block">
                   <div class="header_top-center-item d-flex align-items-center">
                     <div
                       class="item_img-wrapper d-flex justify-content-center align-items-center me-2"
@@ -89,9 +89,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="col d-none d-xl-block">
+                <div class="col d-md-none d-xl-block">
                   <div class="header_top-center-item d-flex align-items-center">
-                    <p class="text-small mb-0 me-3">
+                    <p class="text-small mb-0 me-3 d-none d-xl-block">
                       <a href=" ">
                         <span class="nowrap">Задайте Ваш вопрос </span> <br />
                         <span
@@ -101,18 +101,26 @@
                         ONLINE
                       </a>
                     </p>
-                    <img
-                      src="./assets/img/whatsapp.png "
-                      alt="whatsapp "
-                      width="41 "
-                      height="41 "
-                    />
+                    <a href=" ">
+                      <img
+                        src="./assets/img/whatsapp.png "
+                        alt="whatsapp "
+                        width="41"
+                        height="41"
+                        style="min-width: 41px"
+                        class="d-none d-md-block" />
+                      <img
+                        src="./assets/img/manwhatsapp.png "
+                        alt="manager "
+                        width="80 "
+                        class="d-md-none"
+                    /></a>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="col-xxl-2 col-lg-4 col-xl-3 col-md-5 d-flex align-items-center col-8"
+              class="col-xxl-2 col-lg-4 col-xl-3 d-none col-md-5 d-md-flex align-items-center col-8"
             >
               <img
                 src="./assets/img/managerelipse.png "
@@ -131,8 +139,11 @@
           <div class="row">
             <div class="col-lg-10 offset-lg-1">
               <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <p class="h4 bold mb-0 ps-4 d-md-none">
+                  <a href="# ">8 (495) 545-55-55</a>
+                </p>
                 <button
-                  class="navbar-toggler"
+                  class="navbar-toggler ms-auto"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarNavDropdown"
@@ -198,11 +209,11 @@
         </div>
       </div>
     </header>
-    <section class="intro mt-4 mb-4">
+    <section class="intro mt-md-4 mb-4">
       <div class="container-fluid">
         <div class="row">
           <div
-            class="col-lg-1 d-none d-lg-flex text-center align-items-center justify-content-center"
+            class="col-1 d-none d-lg-flex text-center align-items-center justify-content-center"
           >
             <div
               class="perform_column d-flex justify-content-between align-items-center"
@@ -234,7 +245,7 @@
                         width="75"
                       />
                       <h3 class="text-big bold">Только Volvo</h3>
-                      <span class="text-small"
+                      <span class="text-small d-none d-md-block"
                         >Мы специализируемся <br />
                         на автомобилях Вольво</span
                       >
@@ -247,7 +258,7 @@
                         width="95"
                       />
                       <h3 class="text-big bold">Опыт мотористов</h3>
-                      <span class="text-small"
+                      <span class="text-small d-none d-md-block"
                         >Более 200 капитальных <br />
                         ремонтов двигателя Вольво</span
                       >
@@ -260,7 +271,7 @@
                         width="75"
                       />
                       <h3 class="text-big bold">Гарантия на работы</h3>
-                      <span class="text-small"
+                      <span class="text-small d-none d-md-block"
                         >предоставляем гарантии <br />на наши работы</span
                       >
                     </div>
@@ -312,7 +323,7 @@
     <section class="stocks mb-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-4">
             <div class="stocks_item">
               <p class="stocks_undertitle text-small ligthen-color uppercase">
                 отремонтирован и чист
@@ -325,7 +336,7 @@
               <p class="text-small ligthen-color ms-4">До конца февраля</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-4">
             <div class="stocks_item stocks_item-2">
               <p class="stocks_undertitle text-small ligthen-color uppercase">
                 Давайте разберемся?
@@ -338,7 +349,7 @@
               <p class="text-small ligthen-color ms-4">До конца февраля</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-4">
             <div class="stocks_item stocks_item-3">
               <p class="stocks_undertitle text-small ligthen-color uppercase">
                 появились ошибки?
@@ -365,7 +376,7 @@
         </div>
         <div class="row">
           <div
-            class="col-lg-1 mt-5 pe-0 pt-3 align-items-start justify-content-end d-flex"
+            class="col-lg-1 d-none d-lg-flex mt-5 pe-0 pt-3 align-items-start justify-content-end d-flex"
           >
             <div class="preform-text">
               <p class="text-big uppercase ligthen-color m-0">
@@ -376,7 +387,9 @@
           <div class="col-lg-8 quiz_column">
             <div class="quiz_nav d-flex justify-content-end mb-3 me-5">
               <div class="quiz-steps d-flex">
-                <div class="quiz_step active d-flex align-items-center">
+                <div
+                  class="quiz_step quiz_step-1 active d-flex align-items-center"
+                >
                   <p
                     class="text-small ligthen-color quiz_step-number text-center mb-0 pmsb"
                   >
@@ -384,7 +397,7 @@
                   </p>
                   <div class="line"></div>
                 </div>
-                <div class="quiz_step d-flex align-items-center">
+                <div class="quiz_step quiz_step-2 d-flex align-items-center">
                   <p
                     class="text-small ligthen-color quiz_step-number text-center mb-0 pmsb"
                   >
@@ -392,7 +405,7 @@
                   </p>
                   <div class="line"></div>
                 </div>
-                <div class="quiz_step d-flex align-items-center">
+                <div class="quiz_step quiz_step-3 d-flex align-items-center">
                   <p
                     class="text-small ligthen-color quiz_step-number text-center mb-0 pmsb"
                   >
@@ -400,7 +413,7 @@
                   </p>
                   <div class="line"></div>
                 </div>
-                <div class="quiz_step d-flex align-items-center">
+                <div class="quiz_step quiz_step-4 d-flex align-items-center">
                   <p
                     class="text-small ligthen-color quiz_step-number text-center mb-0 pmsb"
                   >
@@ -409,7 +422,7 @@
                 </div>
               </div>
               <div class="quiz_arrows d-flex align-items-center ms-4">
-                <div class="quiz-prev quiz_arrow disabled">
+                <div class="quiz-prev quiz_arrow">
                   <?xml version="1.0" encoding="UTF-8" standalone="yes"?><svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 22 22"
@@ -1064,6 +1077,32 @@
           });
         });
       })(jQuery);
+    </script>
+    <script>
+      $(".quiz_next, .quiz-next").click(function (e) {
+        e.preventDefault();
+        var currentSlide = $(".quiz-slide.active").index();
+        var nextSlide = Math.trunc(currentSlide) + 2;
+        if (nextSlide <= 4) {
+          $(".quiz-slide").removeClass("active");
+          $(".quiz-slide-" + nextSlide).addClass("active");
+          $(".quiz_step-" + nextSlide).addClass("active");
+        }
+
+        console.log(nextSlide);
+      });
+      $(" .quiz-prev").click(function (e) {
+        e.preventDefault();
+        var currentSlide = Math.trunc($(".quiz-slide.active").index());
+        var nextSlide = currentSlide + 1;
+        if (currentSlide > 0) {
+          $(".quiz-slide").removeClass("active");
+          $(".quiz-slide-" + currentSlide).addClass("active");
+          $(".quiz_step-" + nextSlide).removeClass("active");
+        }
+
+        console.log(nextSlide);
+      });
     </script>
   </body>
 </html>
