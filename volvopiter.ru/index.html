@@ -278,6 +278,8 @@
                   </div>
                   <button
                     class="button_volvo button_h-60 mt-5 button_with-book ms-md-5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
                   >
                     расчитать стоимость
                   </button>
@@ -810,10 +812,10 @@
                 </div>
               </div>
               <div class="row quiz-slide quiz-slide-4 pt-3">
-                <div class="col-lg-3 mt-5">
+                <div class="col-xxl-3 col d-none d-xxl-block order-xxl-1 mt-5">
                   <img src="./assets/img/bigphone.png" alt="" />
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xxl-6 order-2 order-xxl-2 col">
                   <div class="quiz_form">
                     <div class="row">
                       <div class="col-12">
@@ -898,7 +900,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-4 col-xxl-3 order-1 order-xxl-3 text-center">
                   <img src="./assets/img/note.png" alt="" class="note" />
                   <p class="text-big mt-4">
                     Александр менеджер<br />
@@ -1053,9 +1055,114 @@
               </div>
             </div>
           </div>
+          <div class="col-xxl-1 order-4"></div>
         </div>
       </div>
     </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="popup_form">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <h3 class="h3 text-left mb-2 pmbold">
+                        Люкс мойка Вольво В ПОДАРОК
+                      </h3>
+                      <p class="color-lighten">До конца февраля</p>
+                      <p class="text-big mb-4">
+                        Мы примем вас в любой удобный для вас день и пришлем
+                        информаци
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <p class="text-big pmbold">Предварительная запись</p>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="date" name="date" class="quiz_select" />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="time" name="time" class="quiz_select" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-left mt-4 mb-4">
+                      <p class="text-big pmbold mb-0">
+                        Куда прислать информацию
+                      </p>
+                    </div>
+                  </div>
+                  <div class="af_radio_row row mb-4">
+                    <label class="f_viber col-4">
+                      <input
+                        type="radio"
+                        name="callback"
+                        value="viber"
+                        id="f_viber"
+                        checked=""
+                      />
+                      <span class="text-start">Viber</span>
+                    </label>
+                    <label class="f_whatsapp col-4">
+                      <input
+                        type="radio"
+                        name="callback"
+                        value="whatsapp"
+                        id="f_whatsapp"
+                      />
+                      <span class="text-start"> WhatsApp</span>
+                    </label>
+
+                    <label class="f_sms col-4">
+                      <input
+                        type="radio"
+                        name="callback"
+                        value="sms"
+                        id="f_sms"
+                      />
+                      <span class="text-start"> SMS</span>
+                    </label>
+                  </div>
+                  <div class="row pb-4 align-items-center">
+                    <div class="col-md-6">
+                      <input
+                        type="tel"
+                        name="phone"
+                        required=""
+                        placeholder="+7 (___)-___-__-__"
+                      />
+                    </div>
+                    <div class="col-md-6 text-center">
+                      <button class="button_volvo button_h-45">
+                        получить информацию
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js "
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

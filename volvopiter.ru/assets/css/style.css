@@ -113,6 +113,9 @@ img {
 .button_h-60 {
   height: 60px;
 }
+.button_h-45 {
+  height: 45px;
+}
 .button_volvo {
   width: 100%;
   box-shadow: 1px 3px 5px 0 #131111d2;
@@ -596,10 +599,10 @@ header .color-red:hover {
 }
 
 .quiz_select,
-.quiz_form input[type="tel"] {
+.quiz_form input[type="tel"],
+.popup_form input[type="tel"] {
   display: block;
   width: 100%;
-
   background-color: #f8f9fd;
   border: none;
   padding: 10px 20px;
@@ -655,7 +658,8 @@ header .color-red:hover {
   opacity: 1;
   border: 1px solid #eaecf9;
 }
-.quiz_form input[type="tel"] {
+.quiz_form input[type="tel"],
+.popup_form input[type="tel"] {
   background-image: url(../img/callgray.png);
   background-repeat: no-repeat;
   background-position: left 15px center;
@@ -798,5 +802,43 @@ header .color-red:hover {
 @media (min-width: 768px) {
   .mphone {
     display: none;
+  }
+}
+/* modal */
+.modal-content {
+  background: linear-gradient(
+      90deg,
+      rgba(248, 249, 253, 1) 0%,
+      rgba(248, 249, 253, 1) 20%,
+      rgba(248, 249, 253, 0.8) 55%,
+      rgba(248, 249, 253, 0.5) 64%,
+      rgba(248, 249, 253, 0) 100%
+    ),
+    url(../img/popupbg.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  border-radius: 25px;
+}
+.modal-content .modal-body {
+  padding: 0 60px;
+}
+.modal-header {
+  border: none;
+}
+.modal-footer {
+  border: none;
+}
+.modal-content .quiz_select,
+.modal-content input {
+  border: 1px solid #eaecf9 !important;
+}
+.popup_form input[type="tel"] {
+  padding: 14px 20px;
+  padding-left: 50px;
+}
+@media (min-width: 1200px) {
+  .modal-dialog {
+    max-width: 1200px;
   }
 }
