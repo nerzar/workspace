@@ -141,22 +141,86 @@ header {
   padding: 0;
 }
 .fotoline img {
-  max-width: 354px;
   margin-top: 60px;
   margin-bottom: -160px;
   /* margin-left: -17px; */
   height: auto;
+  position: relative;
 }
-.fotoline img:first-child {
-  margin-left: -85px;
-  width: 334px;
-  height: 285px;
+.img-wrap {
+  position: relative;
 }
-.fotoline img:nth-child(2) {
-  margin-left: -28px;
-  width: 310px;
-  width: 350.76px;
-  height: 277.7px;
-  /* margin-bottom: -141px; */
-  margin-top: 68px;
+.fotoline .img-wrap:after {
+  position: absolute;
+  content: "";
+  background: url(../img/prishep.png) no-repeat center;
+  width: 105px;
+  height: 105px;
+  right: calc(50% - 105px);
+}
+.fotoline .img-wrap:first-child:after {
+  transform: rotate(14deg);
+  right: calc(50% - 105px);
+  top: 20px;
+}
+.fotoline .img-wrap:nth-child(2):after {
+  transform: rotate(-10deg);
+  right: 40%;
+  top: 20px;
+}
+.fotoline .img-wrap:nth-child(3):after {
+  transform: rotate(14deg);
+  right: 24%;
+  top: 20px;
+}
+.fotoline .img-wrap:nth-child(4):after {
+  transform: rotate(-14deg);
+  right: 40%;
+  top: 20px;
+}
+/* polyana */
+.polyana {
+  background: url(../img/ropebg.png) no-repeat top -140px center;
+  background-size: 100% auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  overflow: hidden;
+}
+@media (max-width: 1400px) {
+  .polyana {
+    background: url(../img/ropebg.png) no-repeat top -80px center;
+    background-size: 100% 120%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.step-4 .step-content {
+  background: url(../img/polyanacard.png) no-repeat left top;
+  padding: 45px 70px 70px 80px;
+}
+.pngegg {
+  position: relative;
+}
+.pngegg:before {
+  content: "";
+  position: absolute;
+  height: 533px;
+  background: url(../img/pngegg4.png) no-repeat top left;
+  top: -310px;
+  right: -289px;
+  width: 546px;
+  background-size: auto;
+}
+.stepcol {
+  position: relative;
+}
+.step-4:before {
+  content: "";
+  position: absolute;
+  height: 435px;
+  background: url(../img/pngegg5.png) no-repeat top left;
+  top: -290px;
+  left: -303px;
+  width: 661px;
+  background-size: auto;
 }
