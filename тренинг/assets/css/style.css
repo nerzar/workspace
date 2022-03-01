@@ -181,7 +181,7 @@ header {
 /* polyana */
 .polyana {
   background: url(../img/ropebg.png) no-repeat top -140px center;
-  background-size: 100% auto;
+  background-size: 100% 120%;
   padding-top: 160px;
   padding-bottom: 160px;
   overflow: hidden;
@@ -222,5 +222,55 @@ header {
   top: -290px;
   left: -303px;
   width: 661px;
+  background-size: auto;
+}
+/*sheldue*/
+.sheldue {
+  overflow: hidden;
+}
+.sheldue ul {
+  list-style: none;
+}
+.sheldue ul li {
+  border-bottom: 1px solid #5f4c1c;
+}
+.sheldue ul li:last-child {
+  border: none;
+}
+.img-wrap {
+  position: relative;
+}
+.img-wrap-1:before {
+  content: "";
+  position: absolute;
+  height: 365px;
+  background: url(../img/imgwrap1.png) no-repeat top left;
+  top: -235px;
+  left: -330px;
+  width: 600px;
+  background-size: auto;
+}
+.img-wrap-2:before {
+  content: "";
+  position: absolute;
+  height: 501px;
+  background: url(../img/imgwrap3.png) no-repeat top left;
+  top: -345px;
+  right: -330px;
+  width: 600px;
+  background-size: auto;
+}
+
+.img-wrap-2 {
+  margin-top: 180px;
+}
+.img-wrap-3:before {
+  content: "";
+  position: absolute;
+  height: 470px;
+  background: url(../img/imgwrap2.png) no-repeat top left;
+  top: -290px;
+  left: -330px;
+  width: 563px;
   background-size: auto;
 }
