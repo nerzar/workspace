@@ -42,11 +42,12 @@ img {
 /* header */
 header {
   color: white;
-  background: url(../img/bg.png) no-repeat center;
-  background-size: cover;
-
+  background: url(../img/bg1.png) no-repeat center;
+  background-size: 100% 720px;
+  background-attachment: fixed;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  background-position: top -20px center;
 }
 .intro {
   margin-top: 120px;
@@ -273,4 +274,54 @@ header {
   left: -330px;
   width: 563px;
   background-size: auto;
+}
+/*team */
+.team {
+  background: url(../img/teambg.png) no-repeat top -140px center;
+  background-size: 100% 120%;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  overflow: hidden;
+}
+@media (max-width: 1400px) {
+  .team {
+    background: url(../img/teambg.png) no-repeat top -120px center;
+
+    background-size: 120% 120%;
+    padding-top: 120px;
+    padding-bottom: 140px;
+  }
+}
+/* footer */
+footer {
+  background: #98795c;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer .nav-link {
+  color: white;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 300;
+}
+footer a:hover {
+  color: white;
+}
+.social-row a {
+  transition: all 0.4s;
+}
+.social-row a:hover {
+  transform: scale(1.1);
 }
