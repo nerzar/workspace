@@ -32,7 +32,7 @@
             >
               <div class="container-fluid ps-0">
                 <button
-                  class="navbar-toggler"
+                  class="navbar-toggler ms-auto"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
@@ -74,7 +74,7 @@
       </div>
       <div class="container">
         <div class="row intro">
-          <div class="col-11">
+          <div class="col-12 col-md-11">
             <p class="text-24 fw-300">Командообразующий</p>
             <h1 class="fw-300">«Тренинг в лесу»</h1>
             <p class="text-24 fw-300 mb-5">
@@ -82,7 +82,7 @@
             </p>
             <button class="button intro_butt fw-300">Оставить заявку</button>
           </div>
-          <div class="col-1 text-center">
+          <div class="col-1 d-none d-md-block text-center">
             <div class="line mb-4"></div>
             <div class="social-row text-center">
               <a href="#" class="d-block mb-3"
@@ -121,11 +121,12 @@
               малозаметны в повседневной жизни.
             </p>
           </div>
-          <div class="col-md-5 text-center mt-5 pt-5">
+          <div class="col-md-5 text-center mt-md-5 pt-5">
             <img
               src="./assets/img/wood.png"
               alt=""
-              style="max-width: 390px; margin: 0 auto"
+              style="max-width: 100%; margin: 0 auto"
+              class="woodimg"
             />
           </div>
         </div>
@@ -139,7 +140,7 @@
                 width="265"
                 height="162"
               />
-              <p class="mt-3 pe-4">
+              <p class="mt-3 pe-md-4">
                 «Тренинг в лесу» был разработан на основе американского
                 веревочного курса. Он получил свое названин из-за того, что в
                 качестве оборудования здесь используют снаряжение
@@ -223,8 +224,8 @@
         </div>
       </div>
     </section>
-    <section class="tasks mt-5 pb-0">
-      <div class="container pt-5 mt-5">
+    <section class="tasks mt-md-5 pb-0">
+      <div class="container pt-5 mt-md-5 mt-3">
         <div class="row">
           <div class="col-md-8">
             <h2 class="mb-0">ПРИМЕРЫ</h2>
@@ -245,7 +246,7 @@
               src="./assets/img/labir.png"
               alt=""
               style="max-width: 390px; margin: 0 auto"
-              class="pt-4"
+              class="pt-4 labir"
             />
           </div>
         </div>
@@ -255,9 +256,10 @@
               src="./assets/img/pautina.png"
               alt=""
               style="max-width: 390px; margin: 0 auto"
+              class="pautina"
             />
           </div>
-          <div class="col-md-8 mt-5">
+          <div class="col-md-8 mt-md-5">
             <p style="color: #61480a" class="text-22 pt-4">
               Между двумя деревьями на расстоянии примерно 3 метров натянуты
               веревки в виде паутины.
@@ -269,14 +271,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-8 mt-5">
-            <p style="color: #61480a" class="text-22 pt-5">
+          <div class="col-md-8 mt-md-5 order-2 order-md-1">
+            <p style="color: #61480a" class="text-22 pt-md-5">
               Все задания тренинга проходят в полной тишине. Это позволяет
               научиться участникам понимать друг друга без слов, вырабатывая
               свою систему коммуникаций.
             </p>
           </div>
-          <div class="col-md-4 text-md-start">
+          <div class="col-md-4 text-md-start order-1 order-md-2">
             <img
               src="./assets/img/kotel.png"
               alt=""
@@ -289,24 +291,28 @@
     <section class="polyana">
       <div class="container">
         <div class="row">
-          <div class="col-4 offset-md-4 text-left pt-5 mt-5 d-flex flex-column">
-            <h2 class="mb-0 d-inline">ЛЕСНАЯ</h2>
+          <div
+            class="col-md-4 col-8 offset-2 offset-md-4 text-left pt-5 mt-5 d-flex flex-column"
+          >
+            <h2 class="mb-0 d-inline mt-5 mt-md-0">ЛЕСНАЯ</h2>
             <h2 class="mt-0 d-inline ms-auto">ПОЛЯНА</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-7 mt-5">
+          <div class="col-md-7 mt-3 mt-md-5 mb-5 mb-md-0 order-2 order-md-1">
             <p style="color: #61480a" class="text-22 pt-3">
               Приезжая на тренинг, участники попадают на лесную поляну. Всё на
               ней продумано до мелочей: зона регистрации гостей, костровище и
               лавочки вокруг, столики для кофе-брейка и круг для разминки.
             </p>
           </div>
-          <div class="col-md-4 text-md-start mt-3 pngegg">
+          <div
+            class="col-md-4 col-10 offset-1 offset-md-0 text-md-start mt-5 mt-md-3 pngegg order-1 order-md-2"
+          >
             <img
               src="./assets/img/polfoto.png"
               alt=""
-              style="max-width: 390px; margin: 0 auto"
+              style="width: 390px; margin: 0 auto; max-width: 100%"
             />
           </div>
         </div>
@@ -335,7 +341,9 @@
     <section class="sheldue">
       <div class="container">
         <div class="row">
-          <div class="col-6 offset-md-3 text-left d-flex flex-column">
+          <div
+            class="col-md-6 offset-md-3 col-8 offset-2 text-left d-flex flex-column"
+          >
             <h2 class="mb-0 d-inline">Расписание</h2>
             <h2 class="mt-0 d-inline ms-auto d-flex">
               дня
@@ -344,7 +352,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 d-none d-lg-block">
             <div class="img-wrap mt-5 mb-5 pb-5 img-wrap-1">
               <img src="./assets/img/sheldphoto1.png" alt="" />
             </div>
@@ -352,7 +360,7 @@
               <img src="./assets/img/sheldphoto3.png" alt="" />
             </div>
           </div>
-          <div class="col-md-6 mt-5">
+          <div class="col-lg-6 mt-5">
             <ul>
               <li class="text-22 pt-4 pb-4">
                 <b>10.00-11:00 -</b> Трансфер на площадку
@@ -387,7 +395,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-none d-lg-block">
             <div class="img-wrap img-wrap-2 pt-5">
               <img src="./assets/img/sheldphoto2.png" alt="" />
             </div>
@@ -398,8 +406,10 @@
     <section class="team">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 offset-md-4 mt-5 text-left d-flex flex-column">
-            <h2 class="mb-0 d-inline">наша</h2>
+          <div
+            class="col-md-4 offset-md-4 mt-5 col-6 offset-3 text-left d-flex flex-column"
+          >
+            <h2 class="mb-0 d-inline pt-5 pt-md-0">наша</h2>
             <h2 class="mt-0 d-inline ms-auto d-flex mb-5">команда</h2>
           </div>
           <div class="col-md-6 offset-md-3 text-center">
@@ -420,7 +430,7 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-md-6 offset-md-3 mt-5 text-left ps-5 pe-5 d-flex flex-column"
+            class="col-md-6 offset-md-3 col-10 offset-1 mt-5 text-left ps-5 pe-5 d-flex flex-column"
           >
             <h2 class="mb-0 d-inline ms-xxl-5">свяжитесь</h2>
             <h2 class="mt-0 d-inline ms-auto me-xxl-5 d-flex mb-5">с нами</h2>
@@ -434,7 +444,7 @@
               alt=""
               class="ps-3"
             />
-            <button class="button fw-300 w-100">Оставить заявку</button>
+            <button class="button fw-300 w-100 mb-md-5">Оставить заявку</button>
           </div>
         </div>
       </div>

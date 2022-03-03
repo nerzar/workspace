@@ -59,6 +59,10 @@ header {
   border-radius: 30px;
   color: white;
   padding: 16px 34px;
+  transition: background 0.3s;
+}
+.button:hover {
+  background: #ee4c19;
 }
 .intro_butt {
   margin-bottom: 160px;
@@ -80,6 +84,10 @@ header {
   padding: 70px 40px 70px;
   padding-left: 70px;
   width: 800px;
+}
+
+.stepcol:before {
+  pointer-events: none;
 }
 .step-2 .step-content {
   background: url(../img/step2.png) no-repeat left top;
@@ -179,7 +187,29 @@ header {
   right: 40%;
   top: 20px;
 }
+/* tasks */
+h2 {
+  position: relative;
+}
+.tasks h2:first-child:after {
+  position: absolute;
+  content: "";
+  width: 68px;
+  height: 68px;
+  background: url(../img/star.png) no-repeat center;
+  top: -40px;
+  left: 320px;
+}
 /* polyana */
+.polyana h2:first-child:after {
+  position: absolute;
+  content: "";
+  width: 68px;
+  height: 68px;
+  background: url(../img/star.png) no-repeat center;
+  top: -60px;
+  left: -140px;
+}
 .polyana {
   background: url(../img/ropebg.png) no-repeat top -140px center;
   background-size: 100% 120%;
@@ -191,8 +221,8 @@ header {
   .polyana {
     background: url(../img/ropebg.png) no-repeat top -80px center;
     background-size: 100% 120%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 140px;
+    padding-bottom: 100px;
   }
 }
 .step-4 .step-content {
@@ -228,6 +258,15 @@ header {
 /*sheldue*/
 .sheldue {
   overflow: hidden;
+}
+.sheldue h2:first-child:after {
+  position: absolute;
+  content: "";
+  width: 68px;
+  height: 68px;
+  background: url(../img/star.png) no-repeat center;
+  top: -20px;
+  left: -140px;
 }
 .sheldue ul {
   list-style: none;
@@ -283,14 +322,33 @@ header {
   padding-bottom: 160px;
   overflow: hidden;
 }
+.team h2:first-child:after {
+  position: absolute;
+  content: "";
+  width: 68px;
+  height: 68px;
+  background: url(../img/star.png) no-repeat center;
+  top: -50%;
+  right: -80px;
+}
 @media (max-width: 1400px) {
   .team {
     background: url(../img/teambg.png) no-repeat top -120px center;
 
     background-size: 120% 120%;
-    padding-top: 120px;
+    padding-top: 140px;
     padding-bottom: 140px;
   }
+}
+.connect h2:first-child:after {
+  position: absolute;
+  content: "";
+  width: 68px;
+  height: 68px;
+  background: url(../img/star.png) no-repeat center;
+  top: -60px;
+  left: -80px;
+  background-size: cover;
 }
 /* footer */
 footer {
@@ -324,4 +382,284 @@ footer a:hover {
 }
 .social-row a:hover {
   transform: scale(1.1);
+}
+.woodimg {
+  max-width: 390px;
+}
+@media (max-width: 560px) {
+  .woodimg {
+    max-width: 100%;
+  }
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  section {
+    padding: 50px 0;
+  }
+  .step-content img {
+    margin: 0 auto !important;
+  }
+  .step-content {
+    background: url(../img/mstep1.png) no-repeat left top;
+    background-position: center;
+    background-size: 105% 100%;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding: 90px 10px 90px 20px;
+  }
+  .step-content p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .step-1:before {
+    top: -250px;
+    left: -445px;
+  }
+  .step-2 .step-content {
+    background: url(../img/mstep2.png) no-repeat left top;
+    background-position: center;
+    background-size: 105% 100%;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding: 90px 10px 90px 20px;
+  }
+
+  .step-2 .text-wrap {
+    order: 2;
+  }
+  .step-2:before {
+    content: "";
+    position: absolute;
+    height: 250px;
+    background: url(../img/pngegg2.png) no-repeat bottom left;
+    top: -140px;
+    right: -425px;
+    width: 675px;
+    background-size: cover;
+  }
+  .step-3 .step-content {
+    background: url(../img/mstep3.png) no-repeat left top;
+    background-position: center;
+    background-size: 105% 100%;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding: 90px 10px 90px 20px;
+  }
+  .step-3:before {
+    content: "";
+    position: absolute;
+    height: 400px;
+    background: url(../img/pngegg3.png) no-repeat bottom right;
+    top: -302px;
+    left: -274px;
+    width: 500px;
+    background-size: cover;
+  }
+  .fotoline .img-wrap:after {
+    position: absolute;
+    content: "";
+    background: url(../img/prishep.png) no-repeat center;
+    width: 35px;
+    height: 35px;
+    right: calc(50% - 105px);
+    background-size: cover;
+  }
+  .fotoline img {
+    margin-top: 15px;
+    margin-bottom: -50px;
+    /* margin-left: -17px; */
+    height: auto;
+    position: relative;
+  }
+  .fotoline .img-wrap:first-child:after {
+    transform: rotate(14deg);
+    right: 20px;
+    top: 0px;
+  }
+  .fotoline .img-wrap:nth-child(2):after {
+    transform: rotate(-10deg);
+    right: 40%;
+    top: 0px;
+  }
+  .fotoline .img-wrap:nth-child(3):after {
+    transform: rotate(14deg);
+    right: 24%;
+    top: 0px;
+  }
+  .fotoline .img-wrap:nth-child(4):after {
+    transform: rotate(-14deg);
+    right: 40%;
+    top: 0;
+  }
+  .about {
+    padding-bottom: 0;
+  }
+  .tasks h2:first-child:after {
+    position: absolute;
+    content: "";
+    width: 35px !important;
+    height: 35px !important;
+    background-size: cover !important;
+    top: -40px;
+    left: 45%;
+    background: url(../img/star.png) no-repeat center;
+  }
+  .tasks .row {
+    position: relative;
+  }
+  .labir {
+    position: absolute;
+    top: -30px;
+    transform: rotate(-45deg);
+    width: 140px;
+    right: -50px;
+  }
+  .pautina {
+    position: absolute;
+    top: -85px;
+    transform: rotate(45deg);
+    width: 140px;
+    left: -30px;
+  }
+  .polyana {
+    background: url(../img/polyanambg.png) no-repeat top center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin-top: -60px;
+  }
+  .polyana h2:first-child:after {
+    position: absolute;
+    content: "";
+    width: 35px !important;
+    height: 35px !important;
+    background-size: cover !important;
+    top: -20px;
+    left: -20%;
+    background: url(../img/star.png) no-repeat center;
+  }
+  img {
+    max-width: 100%;
+  }
+  .pngegg:before {
+    content: "";
+    position: absolute;
+    height: 233px;
+    background: url(../img/pngegg4.png) no-repeat bottom left;
+    top: -136px;
+    right: -68px;
+    width: 228px;
+    background-size: cover;
+    transform: rotate(30deg);
+  }
+  .navbar-nav,
+  #navbarSupportedContent > div {
+    text-align: center;
+    justify-content: center;
+  }
+  header {
+    color: white;
+    background: url(../img/bg1.png) no-repeat bottom;
+    background-size: cover;
+    background-attachment: local;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-position: top center;
+  }
+  .step-4 .step-content {
+    background: url(../img/mstep4.png) no-repeat left top;
+    background-position: center;
+    background-size: 105% 100%;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding: 90px 10px 90px 20px;
+  }
+  .step-4:before {
+    content: "";
+    position: absolute;
+    height: 335px;
+    background: url(../img/pngegg5.png) no-repeat bottom right;
+    top: -190px;
+    left: -53px;
+    width: 301px;
+    background-size: auto;
+  }
+  .sheldue ul {
+    padding-left: 0;
+  }
+  .sheldue h2:first-child:after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../img/star.png) no-repeat center;
+    top: -20px;
+    left: -40px;
+    background-size: cover;
+  }
+  .team {
+    background: url(../img/teammbg.png) no-repeat top -60px center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    overflow: hidden;
+  }
+  .team h2:first-child:after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../img/star.png) no-repeat center;
+    top: 10px;
+    right: 0px;
+    background-size: cover;
+  }
+  .connect {
+    padding-top: 0;
+  }
+  .connect h2:first-child:after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../img/star.png) no-repeat center;
+    top: -20px;
+    left: -40px;
+    background-size: cover;
+  }
+  footer .nav-link {
+    color: white;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .social-row {
+    justify-content: center !important;
+  }
+  .social-row a {
+    padding: 0 10px;
+  }
+  footer {
+    padding: 30px 0 20px 0;
+  }
 }
