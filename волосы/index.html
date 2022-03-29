@@ -1,585 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=!, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=!, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/fonts/stylesheet.css"
+    />
+  </head>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
+  <body>
+    <!---  HEADER  --->
+    <header class="header_main">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-3 col-xxl-3 col-lg-4 logo d-flex text-md-start align-items-center"
+          >
+            <a href="/">
+              <img src="./assets/img/logo.png" alt="{$pagetitle}" />
+            </a>
+            <p class="text-small mb-0 ps-3 fw-400">
+              Студия по наращиванию<br />
+              волос в Санкт-Петербурге
+            </p>
+          </div>
 
-<body>
-	<!---  HEADER  --->
-	<header class="header_main">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-md-2 mb-4 mb-md-0 logo text-center text-md-start"><img src="./assets/img/logo.png"
-						alt="{$pagetitle}" width="156"></div>
-				<div class="col-md-3 col-lg-3 сщд-ччд-2 d-none d-md-block bl-gray">
-					<p class="text-smallest mb-0">создание рекламных макетов и настройка таргетированной рекламы</p>
-				</div>
-				<div class="col-md-5 col-lg-4 text-center">
-					<button class="header_button text-start"><span class="text-small d-block">Есть вопрос?
-						</span><span class="text-smallest d-block">Задайте напрямую!</span></button>
-				</div>
-				<div class="d-none d-lg-block col-lg-2 text-end ">
-					<p class="text-smallest mb-0">Или свяжитесь с нами любым удобным для вас способом</p>
-				</div>
-				<div class="col-md-2 d-none d-md-block col-xl-1 text-end header_social">
-					<a href="" class="">
-						<img src="./assets/img/whatsapp.png" alt="whatsapp" width="25">
-					</a>
-					<a href="#" class="ms-3 ">
-						<img src="./assets/img/telegram.png" alt="telegramm" width="25">
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
-	<main class="main">
+          <div class="col-md-2 col-lg-2 d-none d-xxl-block">
+            <p class="text-small mb-0 ps-3">
+              <b>Безопасное</b> <br />
+              наращивание волос
+            </p>
+          </div>
+          <div class="col-lg-3 col-xxl-2">
+            <p class="text-smallest mb-0 header_pin ps-5">
+              Удобное месторасположение<br />
+              <a href="#" class="gold underline"> Смотреть на карте</a>
+            </p>
+          </div>
+          <div class="col-lg-3 col-xl-2">
+            <button
+              class="header_button text-center border-gold"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <span class="text uppercase gold">запись на прием </span>
+            </button>
+          </div>
+          <div class="col-lg-3 text-start d-flex justify-content-end">
+            <div class="header_social">
+              <a href="" class="">
+                <img
+                  src="./assets/img/whatsapp.png"
+                  alt="whatsapp"
+                  width="30"
+                />
+              </a>
+              <a href="#" class="ms-2">
+                <img
+                  src="./assets/img/telegram.png"
+                  alt="telegramm"
+                  width="25"
+                />
+              </a>
+              <a href="#" class="ms-2">
+                <img
+                  src="./assets/img/instagram.png"
+                  alt="telegramm"
+                  width="25"
+                />
+              </a>
+            </div>
+            <p class="text-smallest mb-0 ps-3">
+              Пишите нам в WhatsApp<br />
+              <a href="#" class="text-18 bold"> 0534002822</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
 
-		<!--  INTRO SECTION  -->
-		<section class="intro flakeChar ">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 col col-xxl-6 text-center text-md-start">
-						<h1 class="text-center text-md-start">Целевые клиенты <br> из <span
-								class="violet">Инстаграм</span> за 4 р.</h1>
-						<p class="text mb-5 text-center text-md-start">Профессиональный практикующий таргетолог</p>
-						<div class="intro_features pe-md-5 pe-xxl-0 text-start">
-							<div class="row gx-1">
-								<div class="col-md-4 mb-4 mb-md-0">
-									<p class="text-small bold intro_features-item intro_features-item-1">Рост целевой
-										аудитории</p>
-								</div>
-								<div class="col-md-4 mb-4 mb-md-0">
-									<p class="text-small bold intro_features-item intro_features-item-2">Увелечение
-										продаж</p>
-								</div>
-								<div class="col-md-4 mb-4 mb-md-0">
-									<p class="text-small bold intro_features-item intro_features-item-3">Рост активности
-										подписчиков</p>
-								</div>
-							</div>
+    <!---  MAiN --->
+    <main class="main">
+      <!---  INTRO  --->
+      <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-xxl-5 offset-1 text-center">
+              <h1 class="mb-4 pb-2 bold ff_black">
+                Капсульное и голивудское наращивание волос
+              </h1>
+              <p class="text-24 ff_sb fw-600 mb-4">
+                Раскошные волосы за 2-3 часа
+              </p>
+              <form class="intro_form">
+                <label for="intro_phone" class="text-18 mb-4"
+                  >При наращивании волос <br />
+                  <b> уход для волос в подарок</b>
+                </label>
+                <div class="phone_input-wrapper">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="intro_phone"
+                    placeholder="Введите телефон"
+                    class="text-start phone_input"
+                  />
+                  <button class="btn_main"><span>получить</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-						</div>
-						<a class="btn_main d-block text-center me-auto ms-auto ms-md-0" href="#consult">
-							<span class="text-small" style="line-height:56px;">Онлайн консультация</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--  WEWILLKNOW SECTION -->
-		<section class="wewillknow">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 d-none d-lg-block">
-						<img src="./assets/img/phone.png" alt="Мы разберем" style="margin-top:-140px;">
-					</div>
-					<div class="col-lg-6 col">
-						<h2 class="mb-3 text-center text-md-start">Мы разберем</h2>
-						<p class="text m-0 text-center text-md-start">Консультация проходит в течение часа,<br> по аудио
-							или видеозвонку</p>
-						<div class="row willknow_items-row gx-lg-0 gy-5 ">
-							<div class="col-6 text-center text-md-start">
-								<img src="./assets/img/doll.png" alt="Визуал Вашего профиля" class="mb-3">
-								<p class="text bold mb-1">Визуал</p>
-								<span class="text-small">Вашего профиля</span>
-							</div>
-							<div class="col-6 text-center text-md-start">
-								<img src="./assets/img/like.png" alt="Актуальность УТП в папке профиля" class="mb-3">
-								<p class="text bold mb-1">Актуальность</p>
-								<span class="text-small">УТП в папке профиля</span>
-							</div>
-							<div class="col-6 text-center text-md-start">
-								<img src="./assets/img/money.png" alt="Правильное оформление" class="mb-3">
-								<p class="text bold mb-1">Правильное оформление </p>
-								<span class="text-small">закрепленных сторис как<br> инструмент допродаж</span>
-							</div>
-							<div class="col-6 text-center text-md-start">
-								<img src="./assets/img/engine.png" alt="Стратегии продвижения" class="mb-3">
-								<p class="text bold mb-1">Стратегии продвижения
-								</p>
-								<span class="text-small">Платные и бесплатные</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--  CONSULT SECTION -->
-		<section class="consult" id="consult">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-4 text-center text-md-start">
-						<h3>Получите консультацию<br>
-							по ведению вашего аккаунта
-							Инстаграм за<br>
-							<span class="violet h2 d-block mt-2 mb-4">499р.</span>
-						</h3>
-						<p class="text">Поможем выбрать формат рекламы,
-							определим рекламный бюджет,
-							расчитаем стоимость работ</p>
-					</div>
-					<div class="col-md-6 col-lg-4 text-center">
-						<form class="consult-form text-center">
-							<p class="text-small bold mb-4 mt-2 ">Выберите мессенджер для связи</p>
-							<div class="dp_radio_row mb-4 pt-2">
-								<label class="d_viber">
-
-									<input type="radio" name="callback" value="whatsapp" checked>
-									<span><img src="./assets/img/whatsapp.png" alt="whatsapp" width="40"></span>
-									<small class="text-smallest">whatsapp</small>
-								</label>
-								<label class="d_whatsapp actives">
-
-									<input type="radio" name="callback" value="telegramm">
-									<span><img src="./assets/img/telegram.png" alt="telegramm" width="40"></span>
-									<small class="text-smallest">telegramm</small>
-								</label>
-
-								<label class="d_sms">
-
-									<input type="radio" name="callback" value="sms">
-									<span><img src="./assets/img/email.png" alt="sms" width="40"> </span>
-									<small class="text-smallests">СМС</small>
-								</label>
-							</div>
-							<input type="tel" name="tel" class="input mb-4" placeholder="Ваш телефон(обязательно)">
-							<button class="btn_main">
-								<span class="text-small" style="text-transform:none;">Получить презентацию
-									консультации</span>
-							</button>
-
-						</form>
-					</div>
-					<div class="col-md-4 d-none d-lg-block">
-						<img src="./assets/img/smmgirl.png" class="smmgirl" alt="Консультация">
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ACHIEVS -->
-		<section class="achievs">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="mb-5">Наши достижения и кейсы</h2>
-						<div class="table_wrapper ">
-							<table class="table table-hover">
-								<thead>
-									<th>Название</th>
-									<th>Результаты</th>
-									<th>Охват</th>
-									<th>Показы</th>
-									<th>Цена за результат</th>
-								</thead>
-
-								<tbody>
-									<tr>
-										<td><a href="#">04.08.2020</a></td>
-										<td>457</td>
-										<td>45 555</td>
-										<td>243 545</td>
-										<td>4р</td>
-									</tr>
-									<tr>
-										<td>Рекламная компания №1</td>
-										<td>1343</td>
-										<td>5654</td>
-										<td>75566</td>
-										<td>14р</td>
-									</tr>
-									<tr>
-										<td><a href="#">04.08.2020</a></td>
-										<td>457</td>
-										<td>45 555</td>
-										<td>243 545</td>
-										<td>4р</td>
-									</tr>
-									<tr>
-										<td><a href="#">04.08.2020</a></td>
-										<td>457</td>
-										<td>45 555</td>
-										<td>243 545</td>
-										<td>4р</td>
-									</tr>
-									<tr>
-										<td><a href="#">04.08.2020</a></td>
-										<td>457</td>
-										<td>45 555</td>
-										<td>243 545</td>
-										<td>4р</td>
-									</tr>
-									<tr>
-										<td><a href="#">04.08.2020</a></td>
-										<td>457</td>
-										<td>45 555</td>
-										<td>243 545</td>
-										<td>4р</td>
-									</tr>
-									<tr>
-										<td><a href="#">04.08.2020</a></td>
-										<td>457</td>
-										<td>45 555</td>
-										<td>243 545</td>
-										<td>4р</td>
-									</tr>
-
-									<tr>
-										<td><a href="#">04.08.2020</a></td>
-										<td>457</td>
-										<td>45 555</td>
-										<td>243 545</td>
-										<td>4р</td>
-									</tr>
-
-									<tr>
-										<td><a href="#">04.08.2020</a></td>
-										<td>457</td>
-										<td>45 555</td>
-										<td>243 545</td>
-										<td>4р</td>
-									</tr>
-
-
-
-
-
-								</tbody>
-							</table>
-						</div>
-						<a class="collapse_button" href="#">Показать все</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- CERTIFICATES -->
-		<section class="certificates p-0">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 mb-4 mb-md-0"><a href="#" class="pop">
-							<img src="./assets/img/cert1.jpg">
-						</a></div>
-					<div class="col-md-4 mb-4 mb-md-0"><a href="#" class="pop">
-							<img src="./assets/img/cert2.jpg">
-						</a></div>
-					<div class="col-md-4 mb-4 mb-md-0"><a href="#" class="pop">
-							<img src="./assets/img/cert3.jpg">
-						</a></div>
-				</div>
-			</div>
-			<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-				aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-body">
-							<button type="button" class="close  ms-auto d-block p-0" data-bs-dismiss="modal"
-								aria-label="Close"><span aria-hidden="true">×</span></button>
-							<img src="" class="imagepreview" style="width: 100%;">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- SERVICES -->
-		<section class="services">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center text-md-start">
-						<h2 class="mb-5">Услуги и цены</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4  col-md-6 mb-4 mb-md-0">
-						<div class="services_card">
-							<h3 class="text-center mb-4">Ведение 1 неделю<br>
-								<span class="h2">5 000 р.</span>
-							</h3>
-							<p class="text-small ttu text-center services_item-subhead">Настройка таргетированной
-								рекламы</p>
-							<ul class="mb-5 mt-4">
-								<li>Анализ целевой аудитории. Формирование портрета ЦА.</li>
-								<li>Создание нескольких рекламных макетов.</li>
-								<li>Тестирование макетов и подбор рабочей связки.</li>
-								<li>Оптимизация и масштабирование рекламной кампании.</li>
-							</ul>
-							<div class="text-center">
-
-								<button class="btn_main btn_small">
-									<span class="text-small">заказать</span>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-						<div class="services_card">
-							<h3 class="text-center mb-4">Ведение месяц<br>
-								<span class="h2">15 000 р.</span>
-							</h3>
-							<p class="text-small ttu text-center services_item-subhead">Настройка таргетированной
-								рекламы</p>
-							<ul class="mb-5 mt-4">
-								<li>Анализ целевой аудитории. Формирование портрета ЦА.</li>
-								<li>Создание нескольких рекламных макетов.</li>
-								<li>Тестирование макетов и подбор рабочей связки.</li>
-								<li>Оптимизация и масштабирование рекламной кампании.</li>
-							</ul>
-							<div class="text-center">
-
-								<button class="btn_main btn_small">
-									<span class="text-small">заказать</span>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- GUIDE -->
-		<section class="guide">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9 col-lg-7 col-xxl-6">
-						<h2 class="mb-4 text-center text-md-start">Получите бесплатный гайд по подготовке аккаунта к
-							рекламе</h2>
-						<p class="text-center text-md-start">Уже через минуту</p>
-						<div class="pdf text-center ms-auto me-auto mt-0 mb-3 d-md-none">
-							<a href="#" style="color:white;" class="pdf_hyper mt-5 d-block">
-								<img src="./assets/img/pdf.png" alt="pdf">
-								<p class="ttu mb-0 mt-3" style="line-height:5px;">PDF</p>
-								<span style="font-size:10px;">2,5 Мб</span>
-							</a>
-
-						</div>
-
-						<form class="row guide_form">
-							<div class="col-md-6">
-								<p class="text-small bold mb-4 text-center mt-0">Выберите мессенджер для связи</p>
-								<div class="dp_radio_row  pt-2 mb-4 mb-md-0">
-
-									<label class="d_viber text-center">
-										<input type="radio" name="callback" value="whatsapp" checked="">
-										<span><img src="./assets/img/whatsapp.png" alt="whatsapp" width="40"></span>
-										<small class="text-smallest">whatsapp</small>
-									</label>
-									<label class="d_whatsapp  text-center">
-										<input type="radio" name="callback" value="telegramm">
-										<span><img src="./assets/img/telegram.png" alt="telegramm" width="40"></span>
-										<small class="text-smallest">telegramm</small>
-									</label>
-
-									<label class="d_sms text-center">
-										<input type="radio" name="callback" value="sms">
-										<span><img src="./assets/img/email.png" alt="sms" width="40"> </span>
-										<small class="text-smallests">СМС</small>
-									</label>
-								</div>
-							</div>
-							<div class="col-md-6 ">
-								<input type="tel" name="tel" class="input mb-4" placeholder="Ваш телефон(обязательно)">
-								<button class="btn_main" style="max-width:1000px;">
-									<span class="text-small" style="text-transform:none;">Получить презентацию
-										консультации</span>
-								</button>
-							</div>
-						</form>
-					</div>
-					<div class="col-md-3 col-lg-5 col-xxl-6 text-right d-none d-md-block">
-						<div class="pdf text-center ms-auto">
-							<a href="#" style="color:white;" class="pdf_hyper mt-5 d-block">
-								<img src="./assets/img/pdf.png" alt="pdf">
-								<p class="ttu mb-0 mt-3" style="line-height:5px;">PDF</p>
-								<span style="font-size:10px;">2,5 Мб</span>
-							</a>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-	</main>
-	<style>
-		.line {
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			background: url(https://static.wixstatic.com/media/def093_d1c3adcc4c7f40b08faa3ede82d826b2~mv2.png) repeat;
-			background-color: transparent;
-			height: 120px;
-			width: 100vw;
-			z-index: 22;
-		}
-
-		.t970 {
-			position: fixed;
-			bottom: -5px;
-			left: 0;
-			z-index: 50001;
-			display: block;
-		}
-
-		.t970__widget-input {
-			display: none;
-		}
-
-		.t970_santa .t970__widget {
-			background-image: url(https://static.wixstatic.com/media/def093_3f3fdb32451748459c28fb567f76b508~mv2.png);
-			background-position-x: left;
-			background-position-y: bottom;
-			background-size: contain;
-			background-repeat: no-repeat;
-			bottom: 0;
-			left: 0;
-			width: 100px;
-			height: 220px;
-			position: fixed;
-			z-index: 1;
-			cursor: pointer;
-		}
-
-		.t970__message-wrapper {
-			position: fixed;
-			bottom: 40px;
-			left: 137px;
-			max-width: 350px;
-			min-width: 200px;
-			margin-right: 30px;
-			opacity: 0;
-			z-index: -1;
-			transform: translateY(100%);
-			transition: all ease .3s;
-			box-sizing: border-box;
-			pointer-events: none;
-		}
-
-		.t970__message-arrow_before,
-		.t970__message-arrow_after {
-			position: absolute;
-			left: -13px;
-			bottom: 45px;
-			height: 30px;
-			width: 30px;
-			background: inherit;
-			box-sizing: border-box;
-			transform: skewX(45deg);
-			box-shadow: inherit;
-			z-index: -1;
-			border-top: inherit;
-			border-left: inherit;
-		}
-
-		.t970__message-arrow_after {
-			box-shadow: none;
-			z-index: 3;
-		}
-
-		.t970__message-arrow_before,
-		.t970__message-arrow_after {
-			position: absolute;
-			left: -13px;
-			bottom: 45px;
-			height: 30px;
-			width: 30px;
-			background: inherit;
-			box-sizing: border-box;
-			transform: skewX(45deg);
-			box-shadow: inherit;
-			z-index: -1;
-			border-top: inherit;
-			border-left: inherit;
-		}
-
-		.t970__message {
-			padding: 21px 65px 20px 30px;
-			display: block;
-			box-sizing: border-box;
-		}
-
-		.t970__message-txt {
-			overflow: hidden;
-			text-overflow: ellipsis;
-			max-width: 100%;
-			max-height: 50vh;
-			overflow-y: auto;
-			margin: 0 0 1.5em;
-			color: #fff;
-		}
-
-		.t970__btn-close {
-			position: absolute;
-			top: 21px;
-			right: 20px;
-			background: transparent;
-			border: none;
-			padding: 0;
-			outline: none;
-			cursor: pointer;
-		}
-
-		.t970__widget-input:checked~.t970__message-wrapper,
-		.t970__message-wrapper_active {
-			opacity: 1;
-			transform: translateY(0);
-			z-index: auto;
-			pointer-events: auto;
-		}
-
-		@media screen and (max-width: 768px) {
-			.t970_santa {
-				display: none;
-			}
-		}
-	</style>
-	<div class="t970 t970_santa "> <input class="t970__widget-input" type="checkbox" id="ny-widget-checkbox"> <label
-			for="ny-widget-checkbox" class="t970__widget"></label>
-		<div class="t970__message-wrapper">
-			<div class="t970__message-arrow_before"
-				style="background-color: #FF3101; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);"></div>
-			<div class="t970__message-arrow_after" style="background-color: #FF3101;"></div>
-			<div class="t970__message"
-				style="background-color: #FF3101; border-radius: 5px; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);">
-				<p class="t970__message-txt t-text t-text_sm" style="font-size:16px;" field="text">Компания ООО "СГК"
-					поздравляет Вас с наступающим Новым Годом и Рождеством! <br>Мы очень высоко ценим ваше доверие и
-					хотим
-					от всего сердца поблагодарить вас за то, что вы остаетесь верны нашей компании. В Новом году мы
-					желаем
-					вам удачи и радости, благополучия вашей семье, достатка и успеха во всех делах.</p>
-			</div>
-		</div>
-	</div>
-	<div class="line"></div>
-	<script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="/jquery.snow.js"></script>
-
-	<script>$(function () {
-			$('.pop').on('click', function (event) {
-				event.preventDefault();
-				$('.imagepreview').attr('src', $(this).find('img').attr('src'));
-				$('#imagemodal').modal('show');
-			});
-			$('.collapse_button').on('click', function (event) {
-				event.preventDefault();
-				$('.table_wrapper').toggleClass('active');
-				var text = $('.collapse_button').text();
-				$('.collapse_button').text(text == "Показать все" ? "Скрыть все" : "Показать все");
-			});
-
-
-
-		});</script>
-
-</body>
-
+    <script
+      type="text/javascript"
+      src="./assets/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
