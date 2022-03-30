@@ -520,3 +520,14 @@ header {
 /*************************/
 
 /* manager_info */
+.manager_info .advantages_item {
+  box-shadow: none;
+  background-color: transparent;
+  border-top: 1px solid #e3e3e6;
+  border-radius: 0;
+  min-height: 165px;
+  height: auto;
+}
+.manager_info .col-lg-4 .advantages_item:last-child {
+  border-bottom: 1px solid #e3e3e6;
+}
