@@ -46,6 +46,9 @@ button {
 .text-24 {
   font-size: 1.5rem;
 }
+.text-30 {
+  font-size: 1.9rem;
+}
 .text,
 .text-small,
 .text-smallest {
@@ -286,3 +289,234 @@ header {
   border-radius: 50%;
   padding: 2vw 0;
 }
+
+/*****************/
+/* WORKS */
+.works {
+  padding: 45px 0;
+}
+.works img {
+  width: 100%;
+}
+/**************/
+
+/* WORKS_COMPARE */
+.works_compare {
+  background-color: #f7f7f7;
+  padding-bottom: 0;
+}
+.works_compare-mainrow {
+  margin-bottom: -50px;
+}
+.reveal {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  margin: 2em auto;
+  border: solid 3px #fff;
+  margin-bottom: 20px;
+}
+.after-wrap,
+.before-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.before-wrap,
+.before-wrap img {
+  left: 0;
+}
+.after-wrap,
+.after-wrap img {
+  right: 0;
+}
+.after-wrap {
+  width: 50%;
+  border-left: solid 2px #000;
+}
+.reveal img {
+  width: 255px;
+  display: block;
+  position: absolute;
+  height: 100%;
+  max-width: unset;
+}
+.slider_compare {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  display: block;
+  -webkit-appearance: none;
+  height: 100%;
+  width: calc(100% + 50px) !important;
+  background: 0 0;
+  outline: 0;
+}
+.slider_compare::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: 26px;
+  background: rgba(0, 0, 0, 0) url(../img/comp.png) 50%/30px 30px no-repeat;
+
+  display: block;
+  cursor: pointer;
+}
+.slider_compare:focus::-webkit-slider-thumb,
+.slider_compare:hover::-webkit-slider-thumb {
+  display: block;
+}
+.chemical_compare {
+  padding: 60px 0;
+  background-color: #33364c;
+}
+.reveal_nav {
+  width: 100%;
+}
+.reveal_nav .col-xs-4:first-child {
+  padding-left: 0;
+}
+.reveal_nav .col-xs-4 img {
+  width: 100%;
+  cursor: pointer;
+}
+.reveal_nav .col-xs-4:last-child {
+  padding-right: 0;
+  padding-left: 10px;
+}
+.reveal_nav .col-xs-4:nth-child(2) {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+.chemical_compare-descr {
+  color: #fff;
+  font-family: Cambria;
+}
+.chemical_compare-descr h3 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.chemical_compare-descr p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+.chemical_compare-descr h5 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.chemical_compare-descr a {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: 0;
+}
+.chemical_compare .reveal {
+  display: none;
+  opacity: 0;
+}
+.reveal.active {
+  display: block;
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .reveal_nav img {
+    width: 100%;
+  }
+  .chemical_compare {
+    padding: 40px 0;
+  }
+  .reveal_nav {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .chemical_compare-descr h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .reveal_nav-item-1 {
+    padding-left: 0;
+  }
+  .reveal_nav-item-3 {
+    padding-right: 0;
+  }
+  .reveal_nav-item-2 {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
+  .chemical_compare-descr a {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*************/
+
+/* sendprice */
+.sendprice {
+  padding-top: 160px;
+}
+.sendprice_maincol {
+  box-shadow: -3px 4px 35px 0px rgba(1, 2, 2, 0.09);
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  padding: 80px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.sendprice_form {
+  z-index: 1;
+}
+.sendprice_formcol {
+  z-index: 1;
+}
+.sendprice_form:before {
+  content: "";
+  position: absolute;
+  right: -174px;
+  top: -110px;
+  width: 930px;
+  z-index: -1;
+  height: 694px;
+  background: url(../img/book.png) no-repeat center;
+}
+.sendprice_form {
+  padding: 50px;
+  box-shadow: -3px 4px 35px 0px rgba(1, 2, 2, 0.09);
+  border-radius: 20px;
+  background-color: #fff;
+}
+.dp_radio_row label {
+  cursor: pointer;
+  text-align: center;
+}
+.dp_radio_row span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+.dp_radio_row small {
+  opacity: 0.75;
+}
+.dp_radio_row {
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+/*************************/
+
+/* manager_info */

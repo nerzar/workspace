@@ -226,6 +226,195 @@
           </div>
         </div>
       </section>
+      <!-- WORKS-->
+      <section class="works">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <a href="#" class="pop">
+                    <img src="./assets/img/f1.png" />
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" class="pop">
+                    <img src="./assets/img/f2.png" />
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" class="pop">
+                    <img src="./assets/img/f3.png" />
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="pop">
+                    <img src="./assets/img/f4.png" />
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="pop">
+                    <img src="./assets/img/f5.png" />
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="pop">
+                    <img src="./assets/img/f6.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="imagemodal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button
+                    type="button"
+                    class="close ms-auto d-block p-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <img src="" class="imagepreview" style="width: 100%" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- WORKS COMPARE-->
+      <section class="works_compare">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3 works_compare-mainrow text-center">
+              <h2 class="h1 ff_black">Наши работы до и после:</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="reveal">
+                    <div class="before-wrap">
+                      <img src="./assets/img/c11.jpg" alt="Before makeup" />
+                    </div>
+
+                    <div class="after-wrap after-wrap-product">
+                      <img src="./assets/img/c2.jpg" alt="After makeup" />
+                    </div>
+
+                    <input
+                      id="slider_compare-product"
+                      class="slider_compare"
+                      type="range"
+                      min="0"
+                      max="100"
+                      step="1"
+                      value="50"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEND PRICE-->
+      <section class="sendprice">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 sendprice_maincol">
+              <h2 class="ff_black mt-0 mb-0">Куда отправить расчет</h2>
+              <p class="text-30 mb-5">
+                основанный на ваших<br />
+                персональных данных
+              </p>
+              <div class="row">
+                <div class="col-md-8 col-xxl-7 sendprice_formcol">
+                  <form class="sendprice_form">
+                    <p class="text-big bold text-center mb-4 pb-1">
+                      Выберите куда вам удобнее отправить?
+                    </p>
+                    <div class="dp_radio_row mb-4">
+                      <label class="d_viber">
+                        <input
+                          type="radio"
+                          name="callback"
+                          value="whatsapp"
+                          checked=""
+                        />
+                        <span
+                          ><img
+                            src="./assets/img/whatsapp.png"
+                            alt="whatsapp"
+                            width="60"
+                        /></span>
+                        <small class="text-small">whatsapp</small>
+                      </label>
+                      <label class="d_whatsapp">
+                        <input type="radio" name="callback" value="telegramm" />
+                        <span
+                          ><img
+                            src="./assets/img/telegram.png"
+                            alt="telegramm"
+                            width="60"
+                        /></span>
+                        <small class="text-small">telegramm</small>
+                      </label>
+
+                      <label class="d_sms">
+                        <input type="radio" name="callback" value="sms" />
+                        <span
+                          ><img
+                            src="./assets/img/viber.png"
+                            alt="sms"
+                            width="60"
+                          />
+                        </span>
+                        <small class="text-small">Viber</small>
+                      </label>
+                    </div>
+
+                    <div class="phone_input-wrapper">
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Введите телефон"
+                        class="text-start phone_input"
+                      />
+                      <button class="btn_main">
+                        <span>Запись на прием</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MANAFER INFO-->
+      <section class="manager_info">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="ff_black mt-0 mb-1">Юлия Лайтковская</h2>
+              <p class="text-30 mb-5">руководитель студии Инфинити</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 offset-lg-1">
+              <div class="manager_card"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div style="height: 600px"></div>
     </main>
 
     <script
@@ -237,5 +426,32 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(function () {
+        $(".pop").on("click", function (event) {
+          event.preventDefault();
+          $(".imagepreview").attr("src", $(this).find("img").attr("src"));
+          $("#imagemodal").modal("show");
+        });
+        $(".collapse_button").on("click", function (event) {
+          event.preventDefault();
+          $(".table_wrapper").toggleClass("active");
+          var text = $(".collapse_button").text();
+          $(".collapse_button").text(
+            text == "Показать все" ? "Скрыть все" : "Показать все"
+          );
+        });
+      });
+    </script>
+    <script>
+      var sliderw = document.querySelector("#slider_compare-product"),
+        afterWrapw = document.querySelector(".after-wrap-product");
+
+      sliderw.addEventListener("input", function (e) {
+        var sliderPosw = sliderw.value;
+        afterWrapw.style.width = 100 - sliderPosw + "%";
+      });
+    </script>
   </body>
 </html>
