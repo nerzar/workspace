@@ -65,3 +65,5 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+if (matchMedia("only screen and (max-width: 1200px)").matches) {
+}

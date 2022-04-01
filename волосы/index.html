@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=!, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
@@ -13,19 +17,15 @@
       type="text/css"
       href="./assets/fonts/stylesheet.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
   </head>
 
   <body>
     <!---  HEADER  --->
     <header class="header_main">
-      <div class="container">
+      <div class="container-xl">
         <div class="row align-items-center">
           <div
-            class="col-3 col-xxl-3 col-lg-4 logo d-flex text-md-start align-items-center"
+            class="col-8 col-sm-6 col-md-5 col-lg-4 col-xxl-3 logo d-flex text-md-start align-items-center"
           >
             <a href="/">
               <img src="./assets/img/logo.png" alt="{$pagetitle}" />
@@ -36,20 +36,21 @@
             </p>
           </div>
 
-          <div class="col-md-2 col-lg-2 d-none d-xxl-block">
+          <div class="col-2 d-none d-xxl-block">
             <p class="text-small mb-0 ps-3">
               <b>Безопасное</b> <br />
               наращивание волос
             </p>
           </div>
-          <div class="col-lg-3 col-xxl-2">
-            <p class="text-smallest mb-0 header_pin ps-5">
+          <div class="col-lg-3 col-xxl-2 pe-0 d-none d-lg-block">
+            <p class="text-small mb-0 header_pin ps-5">
               Удобное месторасположение<br />
               <a href="#" class="gold underline"> Смотреть на карте</a>
             </p>
           </div>
-          <div class="col-lg-3 col-xl-2">
+          <div class="col-3 d-none d-md-block col-lg-2 text-center">
             <button
+              style="max-width: 190px; white-space: nowrap"
               class="header_button text-center border-gold"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -57,27 +58,29 @@
               <span class="text uppercase gold">запись на прием </span>
             </button>
           </div>
-          <div class="col-lg-3 text-start d-flex justify-content-end">
-            <div class="header_social">
+          <div
+            class="col-lg-3 col-sm-6 col-md-4 col-4 text-start d-flex justify-content-end"
+          >
+            <div class="header_social d-none d-sm-block">
               <a href="" class="">
                 <img
                   src="./assets/img/whatsapp.png"
                   alt="whatsapp"
-                  width="30"
+                  width="35"
                 />
               </a>
               <a href="#" class="ms-2">
                 <img
                   src="./assets/img/telegram.png"
                   alt="telegramm"
-                  width="25"
+                  width="30"
                 />
               </a>
-              <a href="#" class="ms-2">
+              <a href="#" class="ms-2 d-none">
                 <img
                   src="./assets/img/instagram.png"
                   alt="telegramm"
-                  width="25"
+                  width="30"
                 />
               </a>
             </div>
@@ -96,7 +99,7 @@
       <section class="intro">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7 col-xxl-5 offset-1 text-center">
+            <div class="col-lg-7 col-xxl-5 offset-lg-1 text-center">
               <h1 class="mb-4 pb-2 bold ff_black">
                 Капсульное и голивудское наращивание волос
               </h1>
@@ -114,7 +117,7 @@
                     name="phone"
                     id="intro_phone"
                     placeholder="Введите телефон"
-                    class="text-start phone_input"
+                    class="text-sm-start text-center phone_input"
                   />
                   <button class="btn_main"><span>получить</span></button>
                 </div>
@@ -125,9 +128,9 @@
       </section>
       <!-- subintro_advantages -->
       <section class="subintro_advantages p-0">
-        <div class="container">
+        <div class="container-xl">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0 mt-5 mt-md-0">
               <div class="advantages_item d-flex align-items-center">
                 <img
                   src="./assets/img/woman.png"
@@ -144,7 +147,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
               <div class="advantages_item d-flex align-items-center">
                 <img
                   src="./assets/img/colorpicker.png"
@@ -161,7 +164,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
               <div class="advantages_item d-flex align-items-center">
                 <img
                   src="./assets/img/shield.png"
@@ -183,51 +186,65 @@
 
       <!-- SERVICES -->
       <section class="services pb-0">
-        <div class="container">
+        <div class="container-xl">
           <div class="row">
-            <div class="col-md-10 offset-md-1">
+            <div class="col-xl-10 offset-xl-1">
               <div class="row">
                 <div class="col text-center">
-                  <div class="img-wrap mb-3">
-                    <img src="./assets/img/s1.png" alt="О нас" width="80" />
-                  </div>
-                  <p class="text-18 bold">О нас</p>
+                  <a href="#">
+                    <div class="img-wrap mb-3">
+                      <img src="./assets/img/s1.png" alt="О нас" width="80" />
+                    </div>
+                    <p class="text-18 bold">О нас</p>
+                  </a>
                 </div>
                 <div class="col text-center">
                   <div class="img-wrap mb-3">
-                    <img src="./assets/img/s2.png" alt="О нас" width="91" />
+                    <img src="./assets/img/s2.png" alt="Отзывы" width="91" />
                   </div>
-                  <p class="text-18 bold">О нас</p>
+                  <p class="text-18 bold">Отзывы</p>
                 </div>
                 <div class="col text-center">
                   <div class="img-wrap mb-3">
-                    <img src="./assets/img/s3.png" alt="О нас" width="85" />
+                    <img src="./assets/img/s3.png" alt="Адрес" width="85" />
                   </div>
-                  <p class="text-18 bold">О нас</p>
+                  <p class="text-18 bold">Адрес</p>
                 </div>
                 <div class="col text-center">
                   <div class="img-wrap mb-3">
-                    <img src="./assets/img/s4.png" alt="О нас" width="80" />
+                    <img
+                      src="./assets/img/s4.png"
+                      alt="Капсульное"
+                      width="80"
+                    />
                   </div>
-                  <p class="text-18 bold">О нас</p>
+                  <p class="text-18 bold">Капсульное</p>
                 </div>
                 <div class="col text-center">
                   <div class="img-wrap mb-3">
-                    <img src="./assets/img/s5.png" alt="О нас" width="90" />
+                    <img
+                      src="./assets/img/s5.png"
+                      alt="Голивудское"
+                      width="90"
+                    />
                   </div>
-                  <p class="text-18 bold">О нас</p>
+                  <p class="text-18 bold">Голивудское</p>
                 </div>
                 <div class="col text-center">
                   <div class="img-wrap mb-3">
-                    <img src="./assets/img/s6.png" alt="О нас" width="93" />
+                    <img
+                      src="./assets/img/s6.png"
+                      alt="Окрашивание"
+                      width="93"
+                    />
                   </div>
-                  <p class="text-18 bold">О нас</p>
+                  <p class="text-18 bold">Окрашивание</p>
                 </div>
                 <div class="col text-center">
                   <div class="img-wrap mb-3">
-                    <img src="./assets/img/s7.png" alt="О нас" width="90" />
+                    <img src="./assets/img/s7.png" alt="Укладки" width="90" />
                   </div>
-                  <p class="text-18 bold">О нас</p>
+                  <p class="text-18 bold">Укладки</p>
                 </div>
               </div>
             </div>
@@ -417,59 +434,83 @@
               <div class="row">
                 <div class="col-md-8 col-xxl-7 sendprice_formcol">
                   <form class="sendprice_form">
-                    <p class="text-big bold text-center mb-4 pb-1">
-                      Выберите куда вам удобнее отправить?
-                    </p>
-                    <div class="dp_radio_row mb-4">
-                      <label class="d_viber">
-                        <input
-                          type="radio"
-                          name="callback"
-                          value="whatsapp"
-                          checked=""
-                        />
-                        <span
-                          ><img
-                            src="./assets/img/whatsapp.png"
-                            alt="whatsapp"
-                            width="60"
-                        /></span>
-                        <small class="text-small">whatsapp</small>
-                      </label>
-                      <label class="d_whatsapp">
-                        <input type="radio" name="callback" value="telegramm" />
-                        <span
-                          ><img
-                            src="./assets/img/telegram.png"
-                            alt="telegramm"
-                            width="60"
-                        /></span>
-                        <small class="text-small">telegramm</small>
-                      </label>
-
-                      <label class="d_sms">
-                        <input type="radio" name="callback" value="sms" />
-                        <span
-                          ><img
-                            src="./assets/img/viber.png"
-                            alt="sms"
-                            width="60"
+                    <div class="sendprice_form-wrapper">
+                      <div class="pdf text-center ms-auto">
+                        <a
+                          href="./assets/guide.pdf"
+                          target="_blank"
+                          style="color: white"
+                          class="pdf_hyper mt-5 d-block"
+                        >
+                          <p
+                            class="ttu mb-1 mt-3 bold text-18"
+                            style="line-height: 5px"
+                          >
+                            PDF
+                          </p>
+                          <span style="font-size: 14px; opacity: 0.75"
+                            >2,5 Мб</span
+                          >
+                        </a>
+                      </div>
+                      <p class="text-big bold text-center mb-4 pb-1">
+                        Выберите куда вам удобнее отправить?
+                      </p>
+                      <div class="dp_radio_row mb-4">
+                        <label class="d_viber">
+                          <input
+                            type="radio"
+                            name="callback"
+                            value="whatsapp"
+                            checked=""
                           />
-                        </span>
-                        <small class="text-small">Viber</small>
-                      </label>
-                    </div>
+                          <span
+                            ><img
+                              src="./assets/img/whatsapp.png"
+                              alt="whatsapp"
+                              width="60"
+                          /></span>
+                          <small class="text-small">whatsapp</small>
+                        </label>
+                        <label class="d_whatsapp">
+                          <input
+                            type="radio"
+                            name="callback"
+                            value="telegramm"
+                          />
+                          <span
+                            ><img
+                              src="./assets/img/telegram.png"
+                              alt="telegramm"
+                              width="60"
+                          /></span>
+                          <small class="text-small">telegramm</small>
+                        </label>
 
-                    <div class="phone_input-wrapper">
-                      <input
-                        type="tel"
-                        name="phone"
-                        placeholder="Введите телефон"
-                        class="text-start phone_input"
-                      />
-                      <button class="btn_main">
-                        <span>Запись на прием</span>
-                      </button>
+                        <label class="d_sms">
+                          <input type="radio" name="callback" value="sms" />
+                          <span
+                            ><img
+                              src="./assets/img/viber.png"
+                              alt="sms"
+                              width="60"
+                            />
+                          </span>
+                          <small class="text-small">Viber</small>
+                        </label>
+                      </div>
+
+                      <div class="phone_input-wrapper">
+                        <input
+                          type="tel"
+                          name="phone"
+                          placeholder="Введите телефон"
+                          class="text-start phone_input"
+                        />
+                        <button class="btn_main">
+                          <span>Запись на прием</span>
+                        </button>
+                      </div>
                     </div>
                   </form>
                 </div>
