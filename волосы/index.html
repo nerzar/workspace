@@ -13,6 +13,10 @@
       type="text/css"
       href="./assets/fonts/stylesheet.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -178,50 +182,54 @@
       </section>
 
       <!-- SERVICES -->
-      <section class="services">
+      <section class="services pb-0">
         <div class="container">
           <div class="row">
-            <div class="col text-center">
-              <div class="img-wrap mb-3">
-                <img src="./assets/img/s1.png" alt="О нас" width="80" />
+            <div class="col-md-10 offset-md-1">
+              <div class="row">
+                <div class="col text-center">
+                  <div class="img-wrap mb-3">
+                    <img src="./assets/img/s1.png" alt="О нас" width="80" />
+                  </div>
+                  <p class="text-18 bold">О нас</p>
+                </div>
+                <div class="col text-center">
+                  <div class="img-wrap mb-3">
+                    <img src="./assets/img/s2.png" alt="О нас" width="91" />
+                  </div>
+                  <p class="text-18 bold">О нас</p>
+                </div>
+                <div class="col text-center">
+                  <div class="img-wrap mb-3">
+                    <img src="./assets/img/s3.png" alt="О нас" width="85" />
+                  </div>
+                  <p class="text-18 bold">О нас</p>
+                </div>
+                <div class="col text-center">
+                  <div class="img-wrap mb-3">
+                    <img src="./assets/img/s4.png" alt="О нас" width="80" />
+                  </div>
+                  <p class="text-18 bold">О нас</p>
+                </div>
+                <div class="col text-center">
+                  <div class="img-wrap mb-3">
+                    <img src="./assets/img/s5.png" alt="О нас" width="90" />
+                  </div>
+                  <p class="text-18 bold">О нас</p>
+                </div>
+                <div class="col text-center">
+                  <div class="img-wrap mb-3">
+                    <img src="./assets/img/s6.png" alt="О нас" width="93" />
+                  </div>
+                  <p class="text-18 bold">О нас</p>
+                </div>
+                <div class="col text-center">
+                  <div class="img-wrap mb-3">
+                    <img src="./assets/img/s7.png" alt="О нас" width="90" />
+                  </div>
+                  <p class="text-18 bold">О нас</p>
+                </div>
               </div>
-              <p class="text-18 bold">О нас</p>
-            </div>
-            <div class="col text-center">
-              <div class="img-wrap mb-3">
-                <img src="./assets/img/s1.png" alt="О нас" />
-              </div>
-              <p class="text-18 bold">О нас</p>
-            </div>
-            <div class="col text-center">
-              <div class="img-wrap mb-3">
-                <img src="./assets/img/s1.png" alt="О нас" />
-              </div>
-              <p class="text-18 bold">О нас</p>
-            </div>
-            <div class="col text-center">
-              <div class="img-wrap mb-3">
-                <img src="./assets/img/s1.png" alt="О нас" />
-              </div>
-              <p class="text-18 bold">О нас</p>
-            </div>
-            <div class="col text-center">
-              <div class="img-wrap mb-3">
-                <img src="./assets/img/s1.png" alt="О нас" />
-              </div>
-              <p class="text-18 bold">О нас</p>
-            </div>
-            <div class="col text-center">
-              <div class="img-wrap mb-3">
-                <img src="./assets/img/s1.png" alt="О нас" />
-              </div>
-              <p class="text-18 bold">О нас</p>
-            </div>
-            <div class="col text-center">
-              <div class="img-wrap mb-3">
-                <img src="./assets/img/s1.png" alt="О нас" />
-              </div>
-              <p class="text-18 bold">О нас</p>
             </div>
           </div>
         </div>
@@ -230,7 +238,10 @@
       <section class="works">
         <div class="container">
           <div class="row">
-            <div class="col-md-10 offset-md-1">
+            <div
+              class="col-md-10 offset-md-1 text-center"
+              style="position: relative"
+            >
               <div class="row">
                 <div class="col-md-4 mb-4">
                   <a href="#" class="pop">
@@ -262,6 +273,11 @@
                     <img src="./assets/img/f6.png" />
                   </a>
                 </div>
+              </div>
+              <div class="collapse_button-wrapper text-center">
+                <a class="collapse_button gold underline text-24" href="#"
+                  >Загрузить еще</a
+                >
               </div>
             </div>
           </div>
@@ -301,15 +317,79 @@
                 <div class="col-md-4">
                   <div class="reveal">
                     <div class="before-wrap">
-                      <img src="./assets/img/c11.jpg" alt="Before makeup" />
+                      <img
+                        src="./assets/img/1do_optimized.png"
+                        alt="Before makeup"
+                      />
                     </div>
 
                     <div class="after-wrap after-wrap-product">
-                      <img src="./assets/img/c2.jpg" alt="After makeup" />
+                      <img
+                        src="./assets/img/1posle_optimized.png"
+                        alt="After makeup"
+                      />
                     </div>
 
                     <input
                       id="slider_compare-product"
+                      class="slider_compare"
+                      type="range"
+                      min="0"
+                      max="100"
+                      step="1"
+                      value="50"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="reveal">
+                    <div class="before-wrap">
+                      <img
+                        src="./assets/img/2do_optimized.png"
+                        alt="Before makeup"
+                      />
+                    </div>
+
+                    <div
+                      class="after-wrap after-wrap-product after-wrap-product2"
+                    >
+                      <img
+                        src="./assets/img/2posle_optimized.png"
+                        alt="After makeup"
+                      />
+                    </div>
+
+                    <input
+                      id="slider_compare-product2"
+                      class="slider_compare"
+                      type="range"
+                      min="0"
+                      max="100"
+                      step="1"
+                      value="50"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="reveal">
+                    <div class="before-wrap">
+                      <img
+                        src="./assets/img/3do_optimized.png"
+                        alt="Before makeup"
+                      />
+                    </div>
+
+                    <div
+                      class="after-wrap after-wrap-product after-wrap-product3"
+                    >
+                      <img
+                        src="./assets/img/3posle_optimized.png"
+                        alt="After makeup"
+                      />
+                    </div>
+
+                    <input
+                      id="slider_compare-product3"
                       class="slider_compare"
                       type="range"
                       min="0"
@@ -661,6 +741,143 @@
           </div>
         </div>
       </section>
+      <!-- testimonials -->
+      <section class="testimonials">
+        <div class="container">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="tetimonials_card-wrapper">
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="testimonials_card text-center">
+                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
+                    <h3>Большое спасибо</h3>
+                    <p class="text-18 mb-4 mt-3">
+                      Мастер подобрал цвет не смотря на необычный оттенок все
+                      сделали быстро, красиво и качественно. Обслуживание было
+                      вежливым, обходительным - сразу предложили чашку кофе.
+                    </p>
+                    <p class="text-end">
+                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="tetimonials_card-wrapper">
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="testimonials_card text-center">
+                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
+                    <h3>Большое спасибо</h3>
+                    <p class="text-18 mb-4 mt-3">
+                      Мастер подобрал цвет не смотря на необычный оттенок все
+                      сделали быстро, красиво и качественно. Обслуживание было
+                      вежливым, обходительным - сразу предложили чашку кофе.
+                    </p>
+                    <p class="text-end">
+                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="tetimonials_card-wrapper">
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="testimonials_card text-center">
+                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
+                    <h3>Большое спасибо</h3>
+                    <p class="text-18 mb-4 mt-3">
+                      Мастер подобрал цвет не смотря на необычный оттенок все
+                      сделали быстро, красиво и качественно. Обслуживание было
+                      вежливым, обходительным - сразу предложили чашку кофе.
+                    </p>
+                    <p class="text-end">
+                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="tetimonials_card-wrapper">
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="testimonials_card text-center">
+                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
+                    <h3>Большое спасибо</h3>
+                    <p class="text-18 mb-4 mt-3">
+                      Мастер подобрал цвет не смотря на необычный оттенок все
+                      сделали быстро, красиво и качественно. Обслуживание было
+                      вежливым, обходительным - сразу предложили чашку кофе.
+                    </p>
+                    <p class="text-end">
+                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="tetimonials_card-wrapper">
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="testimonials_card text-center">
+                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
+                    <h3>Большое спасибо</h3>
+                    <p class="text-18 mb-4 mt-3">
+                      Мастер подобрал цвет не смотря на необычный оттенок все
+                      сделали быстро, красиво и качественно. Обслуживание было
+                      вежливым, обходительным - сразу предложили чашку кофе.
+                    </p>
+                    <p class="text-end">
+                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="tetimonials_card-wrapper">
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="phone-button"></div>
+                  <div class="testimonials_card text-center">
+                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
+                    <h3>Большое спасибо</h3>
+                    <p class="text-18 mb-4 mt-3">
+                      Мастер подобрал цвет не смотря на необычный оттенок все
+                      сделали быстро, красиво и качественно. Обслуживание было
+                      вежливым, обходительным - сразу предложили чашку кофе.
+                    </p>
+                    <p class="text-end">
+                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
       <!-- MAP -->
       <section class="map">
         <div class="container">
@@ -692,6 +909,7 @@
             width="1280"
             height="500"
             frameborder="0"
+            loading="lazy"
           ></iframe>
         </div>
       </section>
@@ -706,47 +924,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      $(function () {
-        $(".pop").on("click", function (event) {
-          event.preventDefault();
-          $(".imagepreview").attr("src", $(this).find("img").attr("src"));
-          $("#imagemodal").modal("show");
-        });
-        $(".collapse_button").on("click", function (event) {
-          event.preventDefault();
-          $(".table_wrapper").toggleClass("active");
-          var text = $(".collapse_button").text();
-          $(".collapse_button").text(
-            text == "Показать все" ? "Скрыть все" : "Показать все"
-          );
-        });
-      });
-    </script>
-    <script>
-      var sliderw = document.querySelector("#slider_compare-product"),
-        afterWrapw = document.querySelector(".after-wrap-product");
-
-      sliderw.addEventListener("input", function (e) {
-        var sliderPosw = sliderw.value;
-        afterWrapw.style.width = 100 - sliderPosw + "%";
-      });
-    </script>
-    <script>
-      $(function () {
-        $(".accordeon_title").click(function () {
-          $(this)
-            .parent()
-            .toggleClass("active")
-            .siblings()
-            .removeClass("active");
-          $(this).parent().parent().find(".accordeon_content").slideUp();
-          if (!$(this).next().is(":visible")) {
-            $(this).next().slideDown();
-          }
-        });
-      });
-    </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

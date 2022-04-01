@@ -1,1 +1,0 @@
-git remote set-url origin https://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@github.com/nerzar/template.git

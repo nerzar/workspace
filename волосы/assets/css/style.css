@@ -93,7 +93,7 @@ img {
   max-width: 100%;
 }
 .gold {
-  color: #8c6a46;
+  color: #8c6a46 !important;
 }
 .border-gold {
   border: 1px solid #8b6a47;
@@ -287,16 +287,35 @@ header {
 .services .img-wrap {
   border: 1px solid #8c6a46;
   border-radius: 50%;
-  padding: 2vw 0;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 /*****************/
 /* WORKS */
 .works {
-  padding: 45px 0;
+  padding: 45px 0 70px;
 }
 .works img {
   width: 100%;
+}
+.collapse_button-wrapper {
+  width: 100%;
+  padding-top: 80px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 20%,
+    rgba(255, 255, 255, 0.6) 40%,
+    rgba(255, 255, 255, 0.9) 60%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  margin-top: -40px;
 }
 /**************/
 
@@ -620,7 +639,149 @@ header {
 }
 
 /*****************/
+/* testimonials */
+.testimonials .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*padding-left: 45px;*/
+}
+.swiper-wrapper {
+}
+.testimonials .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 600px;
+  /* margin: 0 22px;*/
+}
+.testimonials_card {
+  padding: 20px 10px;
+  background-color: #f9f9f9;
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) -1.5px 1.5px 2px;
+}
 
+.tetimonials_card-wrapper {
+  height: 100%;
+  /*border: 4px solid #f9f9f9;*/
+  border-radius: 35px;
+  width: 100%;
+  padding: 4px;
+  background-color: #f3f3f3;
+  border: 1px solid #fff;
+  box-shadow: #c7c6c7 -10px 0px 0px;
+}
+.swiper-slide-active .tetimonials_card-wrapper {
+  box-shadow: #c7c6c7 -2px 0px 10px;
+}
+
+.swiper-slide .phone-button {
+  height: 20px;
+  width: 4px;
+  background-color: #b0b0b0;
+  position: absolute;
+  left: -8px;
+  top: 160px;
+  border-radius: 30%;
+  border: 1px solid #979697;
+  border-left: none;
+  box-shadow: none;
+}
+.swiper-slide .phone-button:nth-child(2) {
+  height: 40px;
+  top: 200px;
+  border-radius: 30%;
+}
+.swiper-slide .phone-button:nth-child(3) {
+  height: 40px;
+  top: 260px;
+  border-radius: 30%;
+}
+.swiper-slide .phone-button:nth-child(4) {
+  display: none;
+}
+.swiper-slide-active .phone-button {
+  height: 20px;
+  width: 3px;
+  background-color: #f3f3f3;
+  position: absolute;
+  content: "";
+  left: -3.5px;
+  top: 160px;
+  border-radius: 5px;
+  border: 1px solid #a1a1a1b0;
+  border-left: none;
+  box-shadow: #c7c6c78a -1px 0px 4px;
+}
+.swiper-slide-active .phone-button:nth-child(2) {
+  height: 40px;
+  top: 200px;
+}
+.swiper-slide-active .phone-button:nth-child(3) {
+  height: 40px;
+  top: 260px;
+}
+.swiper-slide-active .phone-button:nth-child(4) {
+  display: block;
+  height: 60px;
+  width: 4px;
+  background-color: #f3f3f3;
+  position: absolute;
+  content: "";
+  right: -4px;
+  left: auto;
+  top: 200px;
+  border-radius: 10px;
+  border: 1px solid #a1a1a166;
+  border-right: none;
+
+  box-shadow: #c7c6c78a 0.5px 0px 1px;
+}
+
+.swiper-slide-next .tetimonials_card-wrapper,
+.swiper-slide-next + .swiper-slide .tetimonials_card-wrapper {
+  box-shadow: #c7c6c7 10px 1px 0px;
+}
+.swiper-slide-next .testimonials_card:before {
+  opacity: 0;
+}
+.swiper-slide-next .phone-button {
+  display: none;
+}
+
+.swiper-slide-next .phone-button:nth-child(4),
+.swiper-slide-next + .swiper-slide .phone-button:nth-child(4) {
+  display: block;
+  height: 60px;
+  width: 4px;
+  background-color: #b0b0b0;
+  position: absolute;
+  left: auto;
+  right: -8px;
+  top: 200px;
+  border-radius: 30%;
+  border: 1px solid #979697;
+  border-right: none;
+  box-shadow: none;
+}
+
+.swiper-slide img {
+  display: block;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.589);
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  border-radius: 40px;
+}
+/**************************/
 /* map */
 .map {
   background-color: #c7a375;
@@ -628,7 +789,7 @@ header {
   color: white;
 }
 .map_toprow {
-  padding: 18px 0;
+  padding: 18px 0 13px;
 }
 .map_toprow p {
   position: relative;
@@ -676,4 +837,9 @@ header {
 }
 .map iframe {
   width: 100% !important;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+.testimonials .swiper-pagination-bullet-active {
+  background-color: #c7a375 !important;
 }
