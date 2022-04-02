@@ -67,3 +67,34 @@ var swiper = new Swiper(".mySwiper", {
 });
 if (matchMedia("only screen and (max-width: 1200px)").matches) {
 }
+
+var swiper2 = new Swiper(".servicesSwiper", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+  },
+  slidesPerView: 2,
+  spaceBetween: 10,
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    769: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+    1400: {
+      slidesPerView: 7,
+      spaceBetween: 4,
+    },
+    1500: {
+      slidesPerView: 7,
+      spaceBetween: 20,
+    },
+  },
+});
