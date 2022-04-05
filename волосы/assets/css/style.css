@@ -582,6 +582,12 @@ header {
 .dp_radio_row small {
   opacity: 0.75;
 }
+.dp_radio_row input:checked small {
+  transition: all 0.3s;
+}
+.dp_radio_row input:checked + span + small {
+  font-weight: bold;
+}
 .dp_radio_row {
   padding-left: 20%;
   padding-right: 20%;
@@ -623,6 +629,137 @@ header {
   animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+.quiz {
+  height: 460px;
+}
+.sendprice_slide {
+  display: none;
+}
+
+.quiz_steps {
+  display: flex;
+}
+.step {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #baa996;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+  position: relative;
+  outline: 3px double transparent;
+}
+
+.step.active {
+  outline: 5px double #baa996;
+  background-color: #d7bc99;
+  border: none;
+}
+.step:not(.step:last-child) :after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  right: -39px;
+  position: absolute;
+  background-color: #baa996;
+  top: calc(50% - 0.5px);
+}
+.step.active:not(.step:last-child) :after {
+  background-color: #d7bc99;
+}
+.step.active span {
+  color: black !important;
+  padding-top: 2px;
+}
+.picture-checkbox1 + span {
+  position: relative;
+  background-color: #fff;
+  display: block;
+  padding-left: 15px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+
+  border: 1px solid transparent;
+}
+.picture-checkbox1:checked + span {
+  border: 1px solid #623500;
+  color: #623500;
+  transition: all 0.3s ease;
+}
+.sendprice_slide .col-md-6 {
+  position: relative;
+}
+.slide-1 .picture-checkbox {
+  width: 100%;
+  height: 300px;
+  padding: 30px 20px;
+}
+.picture-checkbox {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 30px 20px;
+  box-shadow: -3px 4px 35px 0px rgba(1, 2, 2, 0.09);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.slide-1 .col-md-6 .picture-checkbox {
+  background: url(../img/q1.jpg) no-repeat center;
+  background-size: cover;
+}
+.slide-1 .col-md-6:last-child .picture-checkbox {
+  background: url(../img/q2.jpg) no-repeat center;
+  background-size: cover;
+}
+.picture-checkbox1 + span:before,
+.picture-checkbox1 + span:after {
+  content: "";
+  position: absolute;
+  left: 2.5px;
+  top: 2.5px;
+  margin: 4px;
+  width: 27px;
+  height: 27px;
+  z-index: 0;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-transition: 0.28s ease;
+  transition: 0.28s ease;
+  border-color: #c2c2c2;
+}
+.picture-checkbox1:checked + span:after {
+  content: "";
+  position: absolute;
+  left: 2.5px;
+  top: 2.5px;
+  margin: 4px;
+  width: 27px;
+  height: 27px;
+  transform: scale(0.85);
+  border-radius: 50%;
+  background-color: #623500;
+  transition: 0.3s ease;
+}
+
+.quiz:before {
+  content: "";
+  position: absolute;
+  right: -15%;
+  top: -110px;
+  width: 930px;
+  z-index: -1;
+  height: 694px;
+  background: url(../img/book.png) no-repeat center;
+}
+.step {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1002,123 +1139,3 @@ header {
 }
 
 /* sendprice */
-.quiz {
-  height: 460px;
-}
-.sendprice_slide {
-  display: none;
-}
-
-.quiz_steps {
-  display: flex;
-}
-.step {
-  width: 60px;
-  height: 60px;
-  border: 1px solid #baa996;
-  border-radius: 50%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s;
-}
-.step.active {
-  width: 52px;
-  height: 52px;
-  outline: thick double #baa996;
-  background-color: #d7bc99;
-  border: none;
-  margin-top: 4px;
-  margin-left: 4px;
-}
-.step.active span {
-  color: black !important;
-  padding-top: 2px;
-}
-.picture-checkbox1 + span {
-  position: relative;
-  background-color: #fff;
-  display: block;
-  padding-left: 15px;
-  border-radius: 20px;
-  line-height: 40px;
-  text-align: center;
-
-  border: 1px solid transparent;
-}
-.picture-checkbox1:checked + span {
-  border: 1px solid #623500;
-  color: #623500;
-  transition: all 0.3s ease;
-}
-.sendprice_slide .col-md-6 {
-  position: relative;
-}
-.slide-1 .picture-checkbox {
-  width: 100%;
-  height: 300px;
-  padding: 30px 20px;
-}
-.picture-checkbox {
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  padding: 30px 20px;
-  box-shadow: -3px 4px 35px 0px rgba(1, 2, 2, 0.09);
-  border-radius: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-}
-.slide-1 .col-md-6 .picture-checkbox {
-  background: url(../img/q1.jpg) no-repeat center;
-  background-size: cover;
-}
-.slide-1 .col-md-6:last-child .picture-checkbox {
-  background: url(../img/q2.jpg) no-repeat center;
-  background-size: cover;
-}
-.picture-checkbox1 + span:before,
-.picture-checkbox1 + span:after {
-  content: "";
-  position: absolute;
-  left: 2.5px;
-  top: 2.5px;
-  margin: 4px;
-  width: 27px;
-  height: 27px;
-  z-index: 0;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 1px;
-  -webkit-transition: 0.28s ease;
-  transition: 0.28s ease;
-  border-color: #c2c2c2;
-}
-.picture-checkbox1:checked + span:after {
-  content: "";
-  position: absolute;
-  left: 2.5px;
-  top: 2.5px;
-  margin: 4px;
-  width: 27px;
-  height: 27px;
-  transform: scale(0.85);
-  border-radius: 50%;
-  background-color: #623500;
-  transition: 0.3s ease;
-}
-
-.quiz:before {
-  content: "";
-  position: absolute;
-  right: -15%;
-  top: -110px;
-  width: 930px;
-  z-index: -1;
-  height: 694px;
-  background: url(../img/book.png) no-repeat center;
-}
-.step {
-  cursor: pointer;
-}
