@@ -350,6 +350,9 @@ header {
 .works img {
   width: 100%;
 }
+#videomodal video {
+  width: 100% !important;
+}
 
 .collapse_button-wrapper {
   width: 100%;
@@ -549,16 +552,7 @@ header {
 .sendprice_formcol {
   z-index: 1;
 }
-.sendprice_form:before {
-  content: "";
-  position: absolute;
-  right: -15%;
-  top: -110px;
-  width: 930px;
-  z-index: -1;
-  height: 694px;
-  background: url(../img/book.png) no-repeat center;
-}
+
 .sendprice h2,
 .sendprice p {
   position: relative;
@@ -1008,12 +1002,13 @@ header {
 }
 
 /* sendprice */
+.quiz {
+  height: 460px;
+}
 .sendprice_slide {
   display: none;
 }
-.sendprice_slide.active {
-  display: block;
-}
+
 .quiz_steps {
   display: flex;
 }
@@ -1026,6 +1021,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
 }
 .step.active {
   width: 52px;
@@ -1074,7 +1070,7 @@ header {
   margin-bottom: 20px;
   background-color: #fff;
 }
-.slide-1 .col-md-6:first-child .picture-checkbox {
+.slide-1 .col-md-6 .picture-checkbox {
   background: url(../img/q1.jpg) no-repeat center;
   background-size: cover;
 }
@@ -1112,11 +1108,17 @@ header {
   background-color: #623500;
   transition: 0.3s ease;
 }
-section {
-  display: none;
+
+.quiz:before {
+  content: "";
+  position: absolute;
+  right: -15%;
+  top: -110px;
+  width: 930px;
+  z-index: -1;
+  height: 694px;
+  background: url(../img/book.png) no-repeat center;
 }
-.sendprice {
-  display: block;
-}
-.slide-2 {
+.step {
+  cursor: pointer;
 }

@@ -1,17 +1,25 @@
-$(function () {
-  $(".pop").on("click", function (event) {
-    event.preventDefault();
-    $(".imagepreview").attr("src", $(this).find("img").attr("src"));
-    $("#imagemodal").modal("show");
-  });
-  $(".collapse_button").on("click", function (event) {
-    event.preventDefault();
-    $(".table_wrapper").toggleClass("active");
-    var text = $(".collapse_button").text();
-    $(".collapse_button").text(
-      text == "Показать все" ? "Скрыть все" : "Показать все"
-    );
-  });
+$(".pop").on("click", function (event) {
+  event.preventDefault();
+  $(".imagepreview").attr("src", $(this).find("img").attr("src"));
+  $("#imagemodal").modal("show");
+});
+$(".pop-video").on("click", function (event) {
+  event.preventDefault();
+  let srcpath = $(this).attr("video-src");
+  var video = document.getElementById("video");
+  var source = document.getElementById("source");
+
+  source.setAttribute("src", srcpath);
+  $("#videomodal").modal("show");
+  video.load();
+});
+$(".collapse_button").on("click", function (event) {
+  event.preventDefault();
+  $(".table_wrapper").toggleClass("active");
+  var text = $(".collapse_button").text();
+  $(".collapse_button").text(
+    text == "Показать все" ? "Скрыть все" : "Показать все"
+  );
 });
 
 var slider = document.querySelector("#slider_compare-product"),
@@ -41,6 +49,36 @@ $(function () {
       $(this).next().slideDown();
     }
   });
+});
+
+$(".picture-checkbox1").on("change", function () {
+  let slide = $(this).parents(".sendprice_slide").index();
+  quizAction(slide + 1);
+});
+$(".step").on("click", function () {
+  let slide = $(this).index() + 1;
+  quizAction(slide);
+});
+function quizAction(slide) {
+  $(".sendprice_slide").fadeOut(500);
+  $(".slide-" + slide)
+    .delay(550)
+    .fadeIn(500);
+  $(".step").removeClass("active");
+  console.log(slide);
+  for (i = 1; i <= slide; i++) {
+    $(".step-" + i).addClass("active");
+  }
+  if (slide == 4) {
+    console.log("asd");
+    $(".quiz_steps").fadeOut(500);
+  }
+}
+
+function quizGoTo(slide) {}
+$(" .quiz_step").click(function (e) {
+  let slide = $(this).attr("data-index");
+  quizGoTo(slide);
 });
 
 var swiper = new Swiper(".mySwiper", {
