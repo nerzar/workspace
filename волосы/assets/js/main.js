@@ -137,13 +137,15 @@ var swiper2 = new Swiper(".servicesSwiper", {
   },
 });
 $(document).ready(function () {
-  $(".animate").appear(
-    function () {
-      let animName = $(this).attr("data-animation");
-      $(this).addClass("animate__animated");
-      $(this).addClass(animName);
-    },
-    { fullView: true }
-  );
-  $(".animate").appear(function () {});
+  if ($(window).width() > 767) {
+    $(".animate").appear(
+      function () {
+        let animName = $(this).attr("data-animation");
+        $(this).addClass("animate__animated");
+        $(this).addClass(animName);
+      },
+      { fullView: true }
+    );
+    $(".animate").appear(function () {});
+  }
 });

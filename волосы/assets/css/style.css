@@ -190,6 +190,10 @@ section {
   .intro {
     padding: 30px 0;
   }
+  html,
+  body {
+    font-size: 14px;
+  }
 }
 /* header */
 header {
