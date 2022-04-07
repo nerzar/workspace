@@ -167,6 +167,9 @@ section {
 .fw-600 {
   font-weight: 600;
 }
+.intro {
+  padding: 100px 0 140px;
+}
 @media screen and (max-width: 769px) {
   h1,
   .h1 {
