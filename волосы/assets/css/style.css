@@ -214,6 +214,7 @@ header {
   height: 40px;
   line-height: 38px;
 }
+
 .logo img {
   width: 167px;
   max-width: 100%;
@@ -761,9 +762,13 @@ header {
 .step {
   cursor: pointer;
 }
-
+@media (max-width: 900px) {
+  .quiz:before {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
-  .sendprice_form:before {
+  .quiz:before {
     display: none;
   }
   .sendprice_maincol {
@@ -773,10 +778,20 @@ header {
     padding-top: 70px;
     overflow: hidden;
   }
+  .quiz {
+    height: auto;
+  }
+  .quiz_steps {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 540px) {
   .sendprice_maincol {
     padding: 30px 10px;
+  }
+  .quiz {
+    height: 720px;
   }
   .dp_radio_row {
     padding: 0;

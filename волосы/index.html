@@ -49,14 +49,13 @@
             </p>
           </div>
           <div class="col-3 d-none d-md-block col-lg-2 text-center">
-            <button
+            <a
               style="max-width: 190px; white-space: nowrap"
-              class="header_button text-center border-gold"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              class="header_button text-center border-gold d-block"
+           href="#quiz"
             >
               <span class="text uppercase gold">запись на прием </span>
-            </button>
+          </a>
           </div>
           <div
             class="col-lg-3 col-sm-6 col-md-4 col-4 text-start d-flex justify-content-end"
@@ -380,7 +379,7 @@
                   </a>
                 </div>
               </div>
-              <div class="collapse_button-wrapper text-center">
+              <div class="collapse_button-wrapper text-center d-none">
                 <a class="collapse_button gold underline text-24" href="#"
                   >Загрузить еще</a
                 >
@@ -511,15 +510,23 @@
         </div>
       </section>
       <!-- SEND PRICE-->
-      <section class="sendprice">
+      <section class="sendprice" id="sendprice">
         <div class="container-xxl">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="ff_black mt-0 mb-3">Сколько стоит нарастить волосы?</h2>
+            <p class="text-30 mb-lg-5 pb-lg-5 pb-sm-0">
+            Рассчет стоимости наращивания волос за 3 шага
+            </p>
+          </div>
+        </div>
           <div class="row">
             <div
               class="col-xl-10 offset-xl-1 sendprice_maincol text-center text-sm-start"
             >
               <div class="row">
                 <div class="col-lg-8 col-md-10 col-xxl-7 sendprice_formcol">
-                  <div class="quiz">
+                  <div class="quiz" id="quiz">
                     <div class="quiz_steps mb-4">
                       <div class="step step-1 active me-5">
                         <span class="text-18 ff_bold lightgold">01</span>
@@ -527,7 +534,7 @@
                       <div class="step step-2 me-5">
                         <span class="text-18 ff_bold lightgold">02</span>
                       </div>
-                      <div class="step step-3 me-5">
+                      <div class="step step-3 ">
                         <span class="text-18 ff_bold lightgold">03</span>
                       </div>
                     </div>
@@ -690,10 +697,9 @@
                       </div>
                     </div>
                     <div class="sendprice_slide slide-4">
-                      <h2 class="ff_black mt-0 mb-0">Куда отправить расчет</h2>
+                      <h2 class="ff_black mt-0 mb-0">Расчет сформирован</h2>
                       <p class="text-30 mb-5 pb-3 pb-sm-0">
-                        основанный на ваших<br />
-                        персональных данных
+                       выберите удобный для вас способ получения расчета стоимости
                       </p>
                       <form class="sendprice_form">
                         <div class="sendprice_form-wrapper">
@@ -770,7 +776,7 @@
                               class="text-start phone_input"
                             />
                             <button class="btn_main">
-                              <span>Запись на прием</span>
+                              <span>получить расчет</span>
                             </button>
                           </div>
                         </div>
@@ -1041,9 +1047,9 @@
                   Хотите обсудить вопрос напрямую с нашим специалистом -
                   закажите косультацию сейчас!
                 </p>
-                <button class="btn_main me-3 mt-3 mt-md-0">
-                  <span>Запись на прием</span>
-                </button>
+                <a href="#quiz" class="btn_main me-3 mt-3 mt-md-0 d-block text-center ">
+                  <span style="line-height:40px;">Запись на прием</span>
+                </a>
               </div>
             </div>
           </div>
@@ -1083,15 +1089,12 @@
                   <div class="phone-button"></div>
                   <div class="phone-button"></div>
                   <div class="testimonials_card text-center">
-                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
-                    <h3>Большое спасибо</h3>
+                    <img src="./assets/img/sw2.png" alt="отзыв" class="mb-4" />
+                    <h3>Отличная работа</h3>
                     <p class="text-18 mb-4 mt-3">
-                      Мастер подобрал цвет не смотря на необычный оттенок все
-                      сделали быстро, красиво и качественно. Обслуживание было
-                      вежливым, обходительным - сразу предложили чашку кофе.
-                    </p>
+                      Все очень понравилось. Работа мастера. Современное оборудование.Уровень подготовки персонала. Личное отношение, понимание пожеланий. Спасибо всем рекоммендую!
                     <p class="text-end">
-                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                      <a href="#" class="gold bold pe-3">@Alenaneaf</a>
                     </p>
                   </div>
                 </div>
@@ -1104,15 +1107,14 @@
                   <div class="phone-button"></div>
                   <div class="phone-button"></div>
                   <div class="testimonials_card text-center">
-                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
-                    <h3>Большое спасибо</h3>
+                    <img src="./assets/img/sw5.png" alt="отзыв" class="mb-4" />
+                    <h3>Хорошая работа</h3>
                     <p class="text-18 mb-4 mt-3">
-                      Мастер подобрал цвет не смотря на необычный оттенок все
-                      сделали быстро, красиво и качественно. Обслуживание было
-                      вежливым, обходительным - сразу предложили чашку кофе.
+                      Все понравилось. И хотя было много опасений поддержка профессионалов помогла сделать мои волосы как у голливудской кинозвезды! 
+                      Не смотря ни на что - осталась очень довольна результатом.
                     </p>
                     <p class="text-end">
-                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                      <a href="#" class="gold bold pe-3">@anyutaya</a>
                     </p>
                   </div>
                 </div>
@@ -1125,15 +1127,13 @@
                   <div class="phone-button"></div>
                   <div class="phone-button"></div>
                   <div class="testimonials_card text-center">
-                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
-                    <h3>Большое спасибо</h3>
+                    <img src="./assets/img/sw4.png" alt="отзыв" class="mb-4" />
+                    <h3>Пять звёзд</h3>
                     <p class="text-18 mb-4 mt-3">
-                      Мастер подобрал цвет не смотря на необычный оттенок все
-                      сделали быстро, красиво и качественно. Обслуживание было
-                      вежливым, обходительным - сразу предложили чашку кофе.
+                      Одно слово - молодцы! Качество работы и материаловотличной, дизайн уютный, ВСЕ НА ВЫСШЕМ УРОВНЕ! Мастеру Алене отдельное спасибо за понимание и поддержку даже после завершения работ. Так держать - всем советую
                     </p>
                     <p class="text-end">
-                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                      <a href="#" class="gold bold pe-3">@evgeniabar</a>
                     </p>
                   </div>
                 </div>
@@ -1146,40 +1146,19 @@
                   <div class="phone-button"></div>
                   <div class="phone-button"></div>
                   <div class="testimonials_card text-center">
-                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
-                    <h3>Большое спасибо</h3>
+                    <img src="./assets/img/sw3.png" alt="отзыв" class="mb-4" />
+                    <h3>Рекоммендую</h3>
                     <p class="text-18 mb-4 mt-3">
-                      Мастер подобрал цвет не смотря на необычный оттенок все
-                      сделали быстро, красиво и качественно. Обслуживание было
-                      вежливым, обходительным - сразу предложили чашку кофе.
+                      Прийдя в салон ко всему отнеслась настороженно, все-таки осознавала риски, но мастер Татьяна, не только развеяла все сомнения но и впечатлила результатом.
                     </p>
                     <p class="text-end">
-                      <a href="#" class="gold bold pe-3">@kseanuty</a>
+                      <a href="#" class="gold bold pe-3">@Svetsveta</a>
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="swiper-slide">
-                <div class="tetimonials_card-wrapper">
-                  <div class="phone-button"></div>
-                  <div class="phone-button"></div>
-                  <div class="phone-button"></div>
-                  <div class="phone-button"></div>
-                  <div class="testimonials_card text-center">
-                    <img src="./assets/img/sw1.png" alt="отзыв" class="mb-4" />
-                    <h3>Большое спасибо</h3>
-                    <p class="text-18 mb-4 mt-3">
-                      Мастер подобрал цвет не смотря на необычный оттенок все
-                      сделали быстро, красиво и качественно. Обслуживание было
-                      вежливым, обходительным - сразу предложили чашку кофе.
-                    </p>
-                    <p class="text-end">
-                      <a href="#" class="gold bold pe-3">@kseanuty</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
+             
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -1191,20 +1170,20 @@
         <div class="container">
           <div class="row map_toprow">
             <div class="col-lg-5">
-              <p class="text-20 mb-0 footer_pin ps-5">
+              <p class="text-20 mb-lg-0 mb-4 footer_pin ps-5">
                 <span class="">  Адрес: </span><span class="text-18">
                   Санкт-Петербург, Суздальский проспект 24</span
                 >
               </p>
             </div>
             <div class="col-lg-4">
-              <p class="text-20 mb-0 footer_time ps-5">
+              <p class="text-20 mb-lg-0 mb-4  footer_time ps-5">
                 <span class=""> Время работы: </b></span>
                 <span class="text-18">с 9:00 до 19:00</span>
               </p>
             </div>
             <div class="col-lg-3">
-              <p class="text-20 mb-0 footer_phone ps-5">
+              <p class="text-20 mb-lg-0  footer_phone ps-5">
                 <span class="">Телефон: </span> <span class="text-18">(053) 400-28-22</span>
               </p>
             </div>
@@ -1233,5 +1212,21 @@
     ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(88174672, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/88174672" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
   </body>
 </html>
