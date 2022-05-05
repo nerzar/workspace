@@ -145,6 +145,7 @@ global $services;
             <?
 
             }
+
             ?>
         </div>
     </section>
