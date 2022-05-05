@@ -143,6 +143,7 @@ global $services;
                         далее..</a></p>
             </div>
             <?
+
             }
             ?>
         </div>
