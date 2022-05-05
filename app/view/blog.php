@@ -83,20 +83,21 @@ global $services;
             <?php
             $groupIds = array(-211000125); // айди нужных групп через запятую
             $posts = array();
-
             foreach ($groupIds as &$gi) {
-                $response = file_get_contents("https://api.vk.com/method/wall.get?owner_id=$gi&count=12&v=5.131&access_token=92e5480692e5480692e5480658929c0543992e592e54806f3db30e1bcb717bda36f0ce7"); //ввести токен вк
+                $response = file_get_contents("https://api.vk.com/method/wall.get?owner_id=$gi&count=12&v=5.131&access_token=токен"); //ввести токен вк
                 $decoded_arr = json_decode($response, true);
                 // формируем массив с постами
                 for ($i = 0; $i < count($decoded_arr['response']['items']); $i++) {
                     $photoarray = $decoded_arr['response']['items'][$i]['attachments'][0]['photo']['sizes'];
+                    //echo $decoded_arr['response']['items'][$i]['date'];
+                    // echo "<br>";
                     $post = array(
                         'ownerId' => $decoded_arr['response']['items'][$i]['owner_id'],
                         'postId' => $decoded_arr['response']['items'][$i]['id'],
                         'hash' => $decoded_arr['response']['items'][$i]['hash'],
                         'views' => $decoded_arr['response']['items'][$i]['views']['count'],
                         'text' => $decoded_arr['response']['items'][$i]['text'],
-                        'date' => date("d-m-Y", strtotime($decoded_arr['response']['items'][$i]['date'])),
+                        'date' =>  gmdate("d-m-Y", $decoded_arr['response']['items'][$i]['date']),
                         'picture' => $photoarray[count($photoarray) - 1]['url']
                     );
                     array_push($posts, $post);
@@ -138,7 +139,7 @@ global $services;
 
                 <p class="readmore"><small style="opacity:0.6;">
                         <? print $p['date'] ?>
-                    </small><a
+                    </small><a target="blank_"
                         href="https://vk.com/istrinskyzmk?w=wall<? print $p['ownerId'] ?>_<? print $p['postId'] ?>">Читать
                         далее..</a></p>
             </div>
