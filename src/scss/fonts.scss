@@ -1,0 +1,124 @@
+// _fonts.scss
+
+@font-face {
+  font-family: 'sf';
+  src: local('SFProDisplay-Ultralight'), local('SFProDisplay Ultralight'),
+  url('/dist/f/sf_display_pro/SFProDisplay-Ultralight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+}
+@font-face {
+    font-family: 'sf';
+    src: local('SFProDisplay-Thin'), local('SFProDisplay Thin'),
+         url('/dist/f/sf_display_pro/SFProDisplay-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'sf';
+    src: local('SFProDisplay-Light'), local('SFProDisplay Light'),
+         url('/dist/f/sf_display_pro/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'sf';
+    src: local('SFProDisplay-Regular'), local('SFProDisplay Regular'),
+         url('/dist/f/sf_display_pro/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+  font-family: 'sf';
+  src: local('SFProDisplay-Medium'), local('SFProDisplay Medium'),
+  url('/dist/f/sf_display_pro/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+    font-family: 'sf';
+    src: local('SFProDisplay-Semibold'), local('SFProDisplay Semibold'),
+         url('/dist/f/sf_display_pro/SFProDisplay-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'sf';
+    src: local('SFProDisplay-Bold'), local('SFProDisplay Bold'),
+         url('/dist/f/sf_display_pro/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'sf';
+    src: local('SFProDisplay-Heavy'), local('SFProDisplay Heavy'),
+         url('/dist/f/sf_display_pro/SFProDisplay-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'sf';
+    src: local('SFProDisplay-Black'), local('SFProDisplay Black'),
+         url('/dist/f/sf_display_pro/SFProDisplay-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 900;
+}
+
+/*font awesome*/
+
+@font-face {
+    font-family: 'fa_brands';
+    src: url('/dist/f/awesome/fa-brands-400.eot');
+    src: local('Awesome'), local('Awesome Brands'),
+        url('/dist/f/awesome/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+        url('/dist/f/awesome/fa-brands-400.woff2') format('woff2'),
+        url('/dist/f/awesome/fa-brands-400.woff') format('woff'),
+        url('/dist/f/awesome/fa-brands-400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fa_regular';
+    src: url('/dist/f/awesome/fa-regular-400.eot');
+    src: local('Awesome Regular'), local('Awesome'),
+        url('/dist/f/awesome/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+        url('/dist/f/awesome/fa-regular-400.woff2') format('woff2'),
+        url('/dist/f/awesome/fa-regular-400.woff') format('woff'),
+        url('/dist/f/awesome/fa-regular-400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fa_solid';
+    src: url('/dist/f/awesome/fa-solid-900.eot');
+    src: local('Awesome Solid'), local('Awesome'),
+        url('/dist/f/awesome/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+        url('/dist/f/awesome/fa-solid-900.woff2') format('woff2'),
+        url('/dist/f/awesome/fa-solid-900.woff') format('woff'),
+        url('/dist/f/awesome/fa-solid-900.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

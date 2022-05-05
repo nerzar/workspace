@@ -1,0 +1,25 @@
+// _extends.scss
+
+%flex_row{
+  display: flex;
+  flex-direction: row;
+}
+
+%flex_column{
+  display: flex;
+  flex-direction: column;
+}
+
+%flex_start{
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+%flex_center{
+  align-items: center;
+  justify-content: center;
+}
+
+%flex_inline{
+  display: inline-flex;
+}

@@ -1,0 +1,193 @@
+//_footer.scss
+.feedback{
+  width: 80%;
+  height: auto;
+  padding: 4em 10%;
+  @extend %flex_row;
+  background: url('/dist/i/homepage/slider_bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .feedback__form{
+    @extend %flex_column;
+    margin: auto;
+    margin-top: 0em;
+    width: 30%;
+    height: auto;
+
+    legend{
+      text-align: left;
+      margin: .5em auto;
+      margin-left: 0em;
+      font-weight: 600;
+      font-size: 2em;
+    }
+    input, textarea{
+      background: $white;
+      max-width: 320px;
+      border: 0px;
+      box-shadow: 2px 2px .4em rgba(0, 0, 0, .1);
+    }
+    input:focus, textarea:focus{
+      box-shadow: 2px 2px .4em rgba(0, 0, 0, .1),
+      .32em 0px 0px 0px $primary inset;
+    }
+    input:not(:placeholder-shown),
+    textarea:not(:placeholder-shown){
+      box-shadow: 2px 2px .4em rgba(0, 0, 0, .1),
+      .32em 0px 0px 0px $green_hover inset;
+    }
+    input, textarea, button{
+      margin: .5em auto;
+      margin-left: 0em;
+      border-radius: .32em;
+      padding: 1em;
+    }
+    textarea{
+      min-height: 100px;
+    }
+    button{
+      padding: 1em 2em;
+    }
+  }
+  img{
+    height: auto;
+    width: auto;
+    max-width: 60%;
+    margin: auto;
+    margin-right: 0em;
+    margin-top: 0em;
+  }
+}
+@media screen and (max-width: 1241px){
+  .feedback{
+    .feedback__form{
+      input, textarea{
+        max-width: 240px;
+      }
+    }
+    img{
+      // max-width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 811px){
+  .feedback{
+    padding-top: 0em;
+    flex-direction: column;
+    .feedback__form{
+      width: 100%;
+      margin: .5em auto;
+      input, textarea{
+        max-width: 90%;
+      }
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+.footer{
+  width: 80%;
+  height: auto;
+  padding: 4em 10%;
+  margin: 0em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  background: #181412;
+  color: $white;
+
+  .footer__brand,
+  .footer__nav,
+  .footer__info{
+    width: 90%;
+    margin: auto;
+    margin-top: 0em;
+    padding: 0em 10%;
+    @extend %flex_column;
+    h5{
+      color: $white;
+    }
+    a{
+      border: 0em;
+      color: $white;
+      margin: .2em auto;
+      margin-left: 0em;
+    }
+    a#tel, a#email{
+      color: $white;
+    }
+    a:hover, a#tel:hover ,a#email:hover{
+      color: $primary;
+    }
+    address{
+      font-weight: 500;
+      margin: .2em auto;
+      margin-left: 0em;
+      margin-bottom: 1em;
+      color: $white;
+    }
+    address::before{
+      content: '';
+      color: $white;
+      position:absolute;
+      transform: translateX(-1.2em);
+    }
+    .footer__info_socbar{
+      @extend %flex_row;
+      margin-top: 1em;
+      color: $white;
+      a{
+        color: $white;
+        border: 0px;
+        margin: auto 1em;
+        text-decoration: none;
+        margin-left: 0em;
+        font-size: 1.4em;
+      }
+      a:hover{
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 811px){
+  .footer{
+    .footer__brand,
+    .footer__nav,
+    .footer__info{
+      a, address{
+        font-size: .88em;
+      }
+    }
+  }
+}
+@media screen and (max-width: 721px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer__brand,
+    .footer__nav,
+    .footer__info{
+      padding: 0em;
+      margin: 1em auto;
+      width: 100%;
+      a, address{
+        font-size: 1em;
+      }
+      address::before{
+        content: '';
+        position:relative;
+        transform: translateX(0em);
+        margin-right: .32em;
+      }
+    }
+  }
+}
