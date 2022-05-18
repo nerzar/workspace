@@ -1,0 +1,114 @@
+/* catalogue */
+.catalogue {
+  width: 80%;
+  height: auto;
+  padding: 2em 10%;
+}
+.catalogue h2 {
+  margin: 1em auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+.catalogue .catalogue__items {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0.5em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2.5vw;
+  grid-auto-rows: 1fr;
+  grid-row-gap: 4em;
+}
+.catalogue__items_item {
+  display: flex;
+  flex-direction: column;
+}
+.catalogue__cards_item_image {
+  min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  border-radius: 1em;
+  border: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.catalogue__items_item h3 {
+  text-align: center;
+  font-size: 24px;
+}
+.catalogue__items_item a.button {
+  width: calc(100% - 4em);
+  text-transform: capitalize;
+  margin: 0 auto;
+  font-size: 1.1em;
+  margin-left: 0;
+  padding: 1em 2em;
+  border-radius: 0.32em;
+  margin-top: auto;
+  border: 1px solid #ff3b30;
+  color: #ff3b30;
+  background-color: #fff;
+}
+.catalogue__items_item a.button:hover {
+  background-color: #ff3b30;
+  color: #fff;
+}
+
+/* stages */
+.stages {
+  width: 80%;
+  height: auto;
+  padding: 2em 10%;
+}
+.stages h2 {
+  margin: 1em auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+.stages_items {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0.5em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2.5vw;
+  grid-auto-rows: 1fr;
+  grid-row-gap: 4em;
+}
+.stages_item-wrapper {
+  padding: 1vw;
+}
+
+.stages_item {
+  font-family: "Raleway", sans-serif;
+  background: url(/dist/i/stages.png) no-repeat;
+  background-size: cover;
+  box-shadow: 0px 11px 23px rgba(0, 0, 0, 0.04);
+}
+.stages_item-wrapper {
+  background: rgba(255, 255, 255, 0.95);
+  height: 100%;
+}
+.stages .stages_item h3 {
+  font-size: 24px;
+}
+.stages .stages_item p {
+  font-size: 18px;
+}
+.stages .stages_item .stages_number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  color: #ff3340;
+  margin: 10px;
+}

@@ -84,13 +84,11 @@ global $services;
             $groupIds = array(-211000125); // айди нужных групп через запятую
             $posts = array();
             foreach ($groupIds as &$gi) {
-                $response = file_get_contents("https://api.vk.com/method/wall.get?owner_id=$gi&count=12&v=5.131&access_token=токен"); //ввести токен вк
+                $response = file_get_contents("https://api.vk.com/method/wall.get?owner_id=$gi&count=12&v=5.131&access_token=92e5480692e5480692e5480658929c0543992e592e54806f3db30e1bcb717bda36f0ce7"); //ввести токен вк
                 $decoded_arr = json_decode($response, true);
                 // формируем массив с постами
                 for ($i = 0; $i < count($decoded_arr['response']['items']); $i++) {
                     $photoarray = $decoded_arr['response']['items'][$i]['attachments'][0]['photo']['sizes'];
-                    //echo $decoded_arr['response']['items'][$i]['date'];
-                    // echo "<br>";
                     $post = array(
                         'ownerId' => $decoded_arr['response']['items'][$i]['owner_id'],
                         'postId' => $decoded_arr['response']['items'][$i]['id'],
@@ -105,10 +103,12 @@ global $services;
             }
 
             // отрисовываем элементы
+            $i = 1;
+            $sec = 0;
             foreach ($posts as &$p) {
                 $p['picture'] ? $p['picture'] : $p['picture'] = "/dist/i/homepage/slider-bg-3.jpg"; // если в посте нет картинки ставим заглушку
             ?>
-            <div class="blog__item vk_item animate__fadeIn animate__animated" stle="">
+            <div class="blog__item vk_item animate__fadeIn wow" data-wow-duration=".5s" style="visibility:hidden;">
                 <a href="https://vk.com/istrinskyzmk" title="Истринский ЗМК Вконтакте">
                     <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#new_logo_vk_with_text__a)">
