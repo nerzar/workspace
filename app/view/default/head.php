@@ -1,11 +1,12 @@
 <?php
-  (defined('DSE') && defined('DIR_ROOT') && defined('DIR_APP')) or exit('Access denied!');
-  global $services;
+(defined('DSE') && defined('DIR_ROOT') && defined('DIR_APP')) or exit('Access denied!');
+global $services;
 ?>
 <!DOCTYPE html>
 <html lang="ru" prefix="og: //ogp.me/ns#">
-    <head>
-    <link rel="alternate" hreflang="ru-RU" href=""/>
+
+<head>
+    <link rel="alternate" hreflang="ru-RU" href="" />
 
     <meta name="facebook-domain-verification" content="icnvixf15n7kl9za15vrbucog98gyo" />
     <meta name="facebook-domain-verification" content="8bu9drf9xl4rijwwvn15q2tu3ih5d0" />
@@ -16,7 +17,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="theme-color" content="red">
     <meta name="apple-mobile-web-app-status-bar-style" content="red">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1, ya-title=red, ya-dock=red" />
+    <meta name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1, ya-title=red, ya-dock=red" />
 
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -39,5 +41,10 @@
     <link rel="apple-touch-icon" href="/dist/i/favicon.png" />
 
     <link rel="stylesheet" href="/dist/bundle.min.css">
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/style.new.css" />
+</head>
+
+<body>
